@@ -13,7 +13,6 @@ Original file is located at
 import feedparser
 import requests
 from newspaper import Article
-from transformers import pipeline
 from difflib import SequenceMatcher
 import smtplib
 import os
