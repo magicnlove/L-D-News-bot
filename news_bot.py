@@ -52,10 +52,10 @@ EMAIL_SENDER="delusion1083@gmail.com"
 EMAIL_PASSWORD="ikpj tncz fpjb cydr"
 EMAIL_RECEIVER=[
 "202503129@hanwha.com",
-#"js0408@hanwha.com",
-#"heesun.kim@hanwha.com",
-#"202001558@hanwha.com",
-#"201905270@hanwha.com"
+"js0408@hanwha.com",
+"heesun.kim@hanwha.com",
+"202001558@hanwha.com",
+"201905270@hanwha.com"
 ]
 
 def get_google_news():
