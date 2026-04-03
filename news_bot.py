@@ -783,10 +783,6 @@ print("뉴스 브리핑 완료")
 with open("news_board.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 
-# To display the HTML content directly in Colab, you can use IPython.display
-from IPython.display import HTML
-HTML(html_content)
-
 # =========================================
 # check
 # =========================================
@@ -796,22 +792,6 @@ if 'news_board.html' in os.listdir('.'):
     print('news_board.html 파일이 존재합니다.')
 else:
     print('news_board.html 파일이 존재하지 않습니다.')
-
-#============================================
-# Display collected news articles 1
-#============================================
-from IPython.display import display, Markdown
-
-if news:
-    md_output = ""
-    for i, article in enumerate(news):
-        md_output += f"## {i+1}. {article['title']}\n"
-        md_output += f"- **요약:** {article['summary']}\n"
-        md_output += f"- **링크:** {article['link']}\n"
-        md_output += f"- **출처:** {article['source']}\n\n"
-    display(Markdown(md_output))
-else:
-    display(Markdown("수집된 기사가 없습니다."))
 
 #============================================
 # Display collected news articles 2
