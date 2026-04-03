@@ -770,8 +770,8 @@ chart_file = generate_trend_chart(enriched_news);
 html_content = create_html(enriched_news, chart_file);
 
 # news_board.html 파일로 저장.
-with open("news_board.html","w",encoding="utf-8") as f:
-    f.write(html_content);
+with open("index.html","w",encoding="utf-8") as f:
+    f.write(html_content)
 
 print(f"DEBUG: Number of articles to be sent in email: {len(enriched_news)}")
 send_email(enriched_news);
