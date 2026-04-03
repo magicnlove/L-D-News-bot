@@ -52,10 +52,10 @@ EMAIL_SENDER="delusion1083@gmail.com"
 EMAIL_PASSWORD="ikpj tncz fpjb cydr"
 EMAIL_RECEIVER=[
 "202503129@hanwha.com",
-"js0408@hanwha.com",
-"heesun.kim@hanwha.com",
-"202001558@hanwha.com",
-"201905270@hanwha.com"
+#"js0408@hanwha.com",
+#"heesun.kim@hanwha.com",
+#"202001558@hanwha.com",
+#"201905270@hanwha.com"
 ]
 
 def get_google_news():
@@ -548,189 +548,198 @@ def create_email_content(news):
 # dashboard(creat HTML)
 #============================================
 
-def create_html(news,chart_file):
+def create_html(news, chart_file):
+    from collections import Counter
 
-    tags=sorted(list(set([n["tag"] for n in news])))
+    tags = sorted(list(set([n["tag"] for n in news])))
+    total = len(news)
+    tag_counts = Counter([n["tag"] for n in news])
 
-    html=f"""
-<!DOCTYPE html>
+    tag_colors = {
+        "AI":      {"dot": "#FFD166", "badge_bg": "#FFD166", "badge_text": "#5C3A00", "pill_bg": "#FFF6D6", "pill_text": "#5C3A00", "avatar_bg": "#FFD166", "avatar_text": "#5C3A00"},
+        "Fintech": {"dot": "#FFBFA0", "badge_bg": "#FFBFA0", "badge_text": "#6B2200", "pill_bg": "#FFECE4", "pill_text": "#6B2200", "avatar_bg": "#FFBFA0", "avatar_text": "#6B2200"},
+        "Digital": {"dot": "#C68642", "badge_bg": "#C68642", "badge_text": "#ffffff", "pill_bg": "#F5E6D0", "pill_text": "#6B3E10", "avatar_bg": "#C68642", "avatar_text": "#ffffff"},
+    }
+    default_color = {"dot": "#fff", "badge_bg": "#fff", "badge_text": "#333", "pill_bg": "#eee", "pill_text": "#333", "avatar_bg": "#eee", "avatar_text": "#333"}
+
+    def get_avatar_label(tag):
+        if tag == "Fintech": return "FIN"
+        if tag == "Digital": return "DIG"
+        return tag[:3].upper()
+
+    sidebar_channels = ""
+    for t in tags:
+        c = tag_counts.get(t, 0)
+        col = tag_colors.get(t, default_color)
+        sidebar_channels += (
+            f'\n        <div class="sidebar-item" id="tab-{t}" onclick="filterTag(\'{t}\', this)">'
+            f'\n          <span style="width:8px;height:8px;border-radius:50%;background:{col["dot"]};flex-shrink:0;display:inline-block;"></span> {t.lower()}'
+            f'\n          <span style="margin-left:auto;background:{col["badge_bg"]};color:{col["badge_text"]};font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">{c}</span>'
+            f'\n        </div>'
+        )
+
+    stat_cards = (
+        f'\n        <div class="stat-card" style="background:rgba(0,0,0,0.12);" onclick="filterTag(\'all\', document.getElementById(\'tab-all\'))">'
+        f'\n          <p style="font-size:18px;font-weight:500;margin:0;color:#fff;">{total}</p>'
+        f'\n          <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">전체</p>'
+        f'\n        </div>'
+    )
+    for t in tags:
+        c = tag_counts.get(t, 0)
+        col = tag_colors.get(t, default_color)
+        stat_cards += (
+            f'\n        <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag(\'{t}\', document.getElementById(\'tab-{t}\'))">'
+            f'\n          <p style="font-size:18px;font-weight:500;margin:0;color:{col["dot"]};">{c}</p>'
+            f'\n          <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">{t}</p>'
+            f'\n        </div>'
+        )
+
+    bar_chart = ""
+    for t in tags:
+        c = tag_counts.get(t, 0)
+        pct = round(c / total * 100) if total else 0
+        col = tag_colors.get(t, default_color)
+        bar_chart += (
+            f'\n        <div style="display:flex;justify-content:space-between;margin-bottom:3px;">'
+            f'\n          <span style="font-size:11px;color:#FFD9BC;">{t}</span>'
+            f'\n          <span style="font-size:11px;color:#fff;font-weight:500;">{pct}%</span>'
+            f'\n        </div>'
+            f'\n        <div class="stat-bar-bg"><div class="stat-bar" style="width:{pct}%;background:{col["dot"]};"></div></div>'
+        )
+
+    news_cards = ""
+    for i, n in enumerate(news):
+        t = n.get("tag", "")
+        col = tag_colors.get(t, default_color)
+        avatar = get_avatar_label(t)
+        minutes = str(i).zfill(2)
+        title = n['title'].replace('"', '&quot;')
+        summary = n.get('summary', '').replace('"', '&quot;')
+        news_cards += (
+            f'\n      <div class="news-row" data-tag="{t}">'
+            f'\n        <div style="display:flex;gap:10px;">'
+            f'\n          <div style="width:28px;height:28px;border-radius:5px;background:{col["avatar_bg"]};display:flex;align-items:center;justify-content:center;font-size:11px;color:{col["avatar_text"]};font-weight:500;flex-shrink:0;">{avatar}</div>'
+            f'\n          <div style="min-width:0;">'
+            f'\n            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">'
+            f'\n              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>'
+            f'\n              <span style="font-size:11px;color:#888;">오전 9:{minutes}</span>'
+            f'\n              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:{col["pill_bg"]};color:{col["pill_text"]};">{t}</span>'
+            f'\n              <span style="font-size:11px;color:#888;">⭐ {n["importance"]}</span>'
+            f'\n            </div>'
+            f'\n            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">'
+            f'\n              <a href="{n["link"]}" target="_blank" style="color:inherit;text-decoration:none;">{title}</a>'
+            f'\n            </p>'
+            f'\n            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">{summary}</p>'
+            f'\n            <p style="font-size:11px;color:#aaa;margin:0;">{n["source"]} · {n["published_date"]}</p>'
+            f'\n          </div>'
+            f'\n        </div>'
+            f'\n      </div>'
+        )
+
+    html = f"""<!DOCTYPE html>
 <html>
 <head>
-
 <meta charset="utf-8">
-
-<title>(AUTO BOT)디지털L&D센터 IT NEWS UPDATER</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한화투자증권 디지털 L&D 뉴스봇</title>
 <style>
-
-body {{
-font-family: Arial;
-background:#fff7f2;
-padding:20px;
-}}
-
-.container {{
-max-width:1000px;
-margin:auto;
-}}
-
-h1 {{
-color:#F37321;
-text-align:center;
-}}
-
-.search {{
-width:100%;
-padding:10px;
-margin-bottom:10px;
-}}
-
-.filter button {{
-margin:3px;
-padding:6px 10px;
-border:none;
-background:#eee;
-cursor:pointer;
-}}
-
-.filter button:hover {{
-background:#F37321;
-color:white;
-}}
-
-.card {{
-background:white;
-padding:15px;
-margin-bottom:10px;
-border-left:5px solid #F37321;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}}
-
-.tag {{
-display:inline-block;
-background:#F37321;
-color:white;
-font-size:11px;
-padding:3px 7px;
-border-radius:4px;
-margin-bottom:5px;
-}}
-
-.importance {{
-font-size:12px;
-color:#F37321;
-}}
-
+* {{ box-sizing: border-box; margin: 0; padding: 0; }}
+body {{ font-family: Arial, sans-serif; height: 100vh; display: flex; }}
+.sidebar {{ width: 240px; background: linear-gradient(170deg, #C44D00 0%, #E05A00 35%, #F37321 100%); display: flex; flex-direction: column; flex-shrink: 0; height: 100vh; overflow: hidden; }}
+.sidebar-item {{ padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; color: #FFE8D6; display: flex; align-items: center; gap: 8px; }}
+.sidebar-item:hover {{ background: rgba(0,0,0,0.1); }}
+.sidebar-item.active {{ background: rgba(0,0,0,0.18); color: #fff; font-weight: 500; }}
+.stat-card {{ border-radius: 6px; padding: 8px 10px; text-align: center; cursor: pointer; }}
+.stat-card:hover {{ opacity: 0.85; }}
+.stat-bar-bg {{ background: rgba(0,0,0,0.15); border-radius: 2px; height: 4px; margin-bottom: 8px; }}
+.stat-bar {{ height: 100%; border-radius: 2px; }}
+.main {{ flex: 1; display: flex; flex-direction: column; background: #fff; min-width: 0; height: 100vh; }}
+.news-row {{ padding: 13px 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer; }}
+.news-row:hover {{ background: #fafafa; }}
 </style>
-
 </head>
-
 <body>
 
-<div class="container">
+<div class="sidebar">
+  <div style="padding:14px 16px 12px;border-bottom:0.5px solid rgba(0,0,0,0.12);flex-shrink:0;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div style="width:36px;height:36px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:4px;">
+        <img src="logo.png" style="width:28px;height:28px;object-fit:contain;" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <p style="font-size:13px;font-weight:500;margin:0;color:#fff;line-height:1.2;">한화투자증권</p>
+        <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">디지털 L&D 뉴스봇</p>
+      </div>
+    </div>
+  </div>
 
-<h1>(AUTO BOT)디지털L&D센터 IT NEWS UPDATER</h1>
+  <div style="padding:10px 0 0;flex:1;overflow-y:auto;">
+    <div style="margin:0 12px 8px;background:rgba(0,0,0,0.1);border-radius:6px;padding:7px 12px;display:flex;justify-content:space-between;align-items:center;">
+      <span style="font-size:11px;color:#FFD9BC;">오늘</span>
+      <span style="font-size:11px;color:#fff;font-weight:500;" id="today-date"></span>
+    </div>
 
-<p>총 {len(news)}개 뉴스</p>
+    <p style="font-size:10px;color:#FFD9BC;padding:0 16px;margin:0 0 4px;font-weight:500;letter-spacing:0.5px;">채널</p>
+    <div class="sidebar-item active" id="tab-all" onclick="filterTag('all', this)">
+      <span style="opacity:0.7;">#</span> 전체뉴스
+      <span style="margin-left:auto;background:rgba(255,255,255,0.9);color:#C44D00;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">{total}</span>
+    </div>
+    {sidebar_channels}
 
-<p style="text-align: right;">`26.3. ver1.0<BR>made by Digital L&D Center 이승훈</p>
+    <div style="margin:10px 12px;border-top:0.5px solid rgba(0,0,0,0.12);"></div>
 
-<h2>뉴스 트렌드 분석</h2>
+    <p style="font-size:10px;color:#FFD9BC;padding:0 16px;margin:0 0 8px;font-weight:500;letter-spacing:0.5px;">오늘의 통계</p>
+    <div style="margin:0 12px 10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+      {stat_cards}
+    </div>
 
-<img src="{chart_file}" width="400">
-
-<input id="searchBox" class="search" placeholder="뉴스 검색">
-
-<div class="filter">
-
-<button onclick="filterTag('all')">전체</button>
-"""
-
-    for t in tags:
-        html+=f"<button onclick='filterTag(\"{t}\")'>{t}</button>" # Corrected HTML attribute quoting
-
-    html+="</div>"
-
-    for n in news:
-
-        html+=f"""
-
-<div class="card" data-tag="{n['tag']}">
-
-<div class="tag">{n['tag']}</div>
-
-<h3>
-<a href="{n['link']}" target="_blank">
-{n['title']}
-</a>
-</h3>
-
-<div class="importance">
-중요도 ⭐ {n['importance']}
+    <div style="margin:0 12px 12px;background:rgba(0,0,0,0.1);border-radius:6px;padding:10px 12px;">
+      {bar_chart}
+    </div>
+  </div>
 </div>
 
-<p>{n.get('summary','')}</p>
-
-<p>{n['source']} | {n['published_date']}</p>
-
-</div>
-
-"""
-
-    html+="""
-
+<div class="main">
+  <div style="padding:12px 16px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:10px;flex-shrink:0;">
+    <div>
+      <p style="font-size:14px;font-weight:500;color:#1a1a1a;" id="channel-title"># 전체뉴스</p>
+      <p style="font-size:11px;color:#888;margin-top:1px;">뉴스봇이 매일 오전 9시 업데이트</p>
+    </div>
+    <div style="margin-left:auto;">
+      <input id="search-input" placeholder="검색..." style="font-size:12px;padding:5px 10px;border-radius:4px;border:1px solid #ddd;width:160px;">
+    </div>
+  </div>
+  <div id="news-list" style="flex:1;overflow-y:auto;">
+    {news_cards}
+  </div>
 </div>
 
 <script>
-
-const searchBox=document.getElementById("searchBox")
-
-searchBox.addEventListener("keyup",function(){
-
-let keyword=this.value.toLowerCase()
-
-let cards=document.querySelectorAll(".card")
-
-cards.forEach(card=>{
-
-let text=card.innerText.toLowerCase()
-
-card.style.display=text.includes(keyword)?"block":"none"
-
-})
-
-})
-
-function filterTag(tag){
-
-let cards=document.querySelectorAll(".card")
-
-cards.forEach(card=>{
-
-if(tag=="all"){
-card.style.display="block"
-}
-
-else if(card.dataset.tag==tag){
-card.style.display="block"
-}
-
-else{
-card.style.display="none"
-}
-
-})
-
-}
-
+document.getElementById('today-date').textContent = new Date().toLocaleDateString('ko-KR');
+let currentTag = 'all';
+function filterTag(tag, btn) {{
+  currentTag = tag;
+  document.querySelectorAll('.sidebar-item').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  const titles = {{ all: '# 전체뉴스', AI: '# ai-뉴스', Fintech: '# fintech', Digital: '# digital' }};
+  document.getElementById('channel-title').textContent = titles[tag] || '# ' + tag;
+  applyFilters();
+}}
+document.getElementById('search-input').addEventListener('input', applyFilters);
+function applyFilters() {{
+  const keyword = document.getElementById('search-input').value.toLowerCase();
+  document.querySelectorAll('.news-row').forEach(row => {{
+    const tagMatch = currentTag === 'all' || row.dataset.tag === currentTag;
+    const textMatch = row.innerText.toLowerCase().includes(keyword);
+    row.style.display = (tagMatch && textMatch) ? 'block' : 'none';
+  }});
+}}
 </script>
-
 </body>
-</html>
-
-"""
+</html>"""
 
     return html
+
 
 import requests
 
@@ -770,8 +779,8 @@ chart_file = generate_trend_chart(enriched_news);
 html_content = create_html(enriched_news, chart_file);
 
 # news_board.html 파일로 저장.
-with open("index.html","w",encoding="utf-8") as f:
-    f.write(html_content)
+with open("news_board.html","w",encoding="utf-8") as f:
+    f.write(html_content);
 
 print(f"DEBUG: Number of articles to be sent in email: {len(enriched_news)}")
 send_email(enriched_news);
