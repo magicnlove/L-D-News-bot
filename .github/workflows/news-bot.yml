@@ -2,7 +2,7 @@ name: News Bot
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 한국시간 오전 9시
+    - cron: '0 0 * * 1-5'  # 한국시간 오전 9시
   workflow_dispatch:
 
 permissions:
