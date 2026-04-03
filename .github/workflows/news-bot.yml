@@ -27,8 +27,9 @@ jobs:
 
       - name: 결과 저장
         run: |
+          ls -al
           git config --global user.name "bot"
           git config --global user.email "bot@github.com"
-          git add news_board.html news_trend_chart.png
-          git commit -m "update news"
+          git add .
+          git commit -m "update news" || echo "No changes"
           git push
