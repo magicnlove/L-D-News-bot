@@ -405,11 +405,11 @@ def generate_trend_chart(news):
 
     file_name="news_trend_chart.png"
 
-    plt.savefig(file_name)
+    plt.savefig("news_trend_chart.png")
 
     plt.close()
 
-    return file_name
+    return "news_trend_chart.png"
 
 
 # =========================================
