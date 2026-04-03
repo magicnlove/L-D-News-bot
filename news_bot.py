@@ -790,7 +790,7 @@ print("뉴스 브리핑 완료")
 #============================================
 # Display news_board.html content
 #============================================
-with open("news_board.html", "r", encoding="utf-8") as f:
+with open("index.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 
 # =========================================
