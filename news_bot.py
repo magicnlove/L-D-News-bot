@@ -829,7 +829,7 @@ for a in test_articles:
     print(f"본문 길이: {len(text)}")
     print(f"본문 앞 200자: {repr(text[:200])}")
 
-    # ✅ 요약 호출 추가
+    # 요약 호출 추가
     summary = summarize(text)
     print(f"요약 결과: {summary}")
     print()
