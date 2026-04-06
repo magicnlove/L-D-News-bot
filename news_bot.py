@@ -786,7 +786,7 @@ for a in articles[:30]:
     print(f"DEBUG: Article text length after get_article for {a['link']}: {len(text)}") # Added debug print
 
     if not text.strip() or len(text.strip()) < 100: # Explicit length check before calling summarize
-        summary = "(요약 없음 - 본문 추출 실패)"
+        summary = "(기사 요약 거부) 원문을 직접 확인해주세요."
         print(f"DEBUG: Skipping summarization due to insufficient text (length: {len(text)}), using placeholder for: {a['link']}") # Added debug print
     else:
         summary=summarize(text)
