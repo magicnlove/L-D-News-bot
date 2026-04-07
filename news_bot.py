@@ -29,19 +29,18 @@ from bs4 import BeautifulSoup # Added for web scraping
 #============================================
 KEYWORDS=[
 "핀테크",
-"금융 AI",
-"AI 금융",
-"금융 데이터",
-"디지털 금융",
-"generative AI fintech",
-"AI banking",
-"블록체인",
-"blockchain",
 "STO",
 "RWA",
 "조각투자",
 "스테이블",
 "CBDC"
+"generative AI fintech",
+"금융 AI",
+"금융 데이터",
+"디지털 금융",
+"AI banking",
+"블록체인",
+"blockchain",
 ]
 
 # NAVER_CLIENT_ID="YOUR_NAVER_CLIENT_ID" #  Naver Client ID 입력
