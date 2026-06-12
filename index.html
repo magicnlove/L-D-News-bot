@@ -62,15 +62,11 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
     
         <div class="sidebar-item" id="tab-AI" onclick="filterTag('AI', this); closeSidebar();">
           <span style="width:8px;height:8px;border-radius:50%;background:#FFD166;flex-shrink:0;display:inline-block;"></span> ai
-          <span style="margin-left:auto;background:#FFD166;color:#5C3A00;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">5</span>
-        </div>
-        <div class="sidebar-item" id="tab-Digital" onclick="filterTag('Digital', this); closeSidebar();">
-          <span style="width:8px;height:8px;border-radius:50%;background:#C68642;flex-shrink:0;display:inline-block;"></span> digital
-          <span style="margin-left:auto;background:#C68642;color:#ffffff;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">7</span>
+          <span style="margin-left:auto;background:#FFD166;color:#5C3A00;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">4</span>
         </div>
         <div class="sidebar-item" id="tab-Fintech" onclick="filterTag('Fintech', this); closeSidebar();">
           <span style="width:8px;height:8px;border-radius:50%;background:#FFBFA0;flex-shrink:0;display:inline-block;"></span> fintech
-          <span style="margin-left:auto;background:#FFBFA0;color:#6B2200;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">18</span>
+          <span style="margin-left:auto;background:#FFBFA0;color:#6B2200;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">26</span>
         </div>
 
     <div style="margin:10px 12px;border-top:0.5px solid rgba(0,0,0,0.12);"></div>
@@ -83,15 +79,11 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">전체</p>
         </div>
         <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('AI', document.getElementById('tab-AI')); closeSidebar();">
-          <p style="font-size:18px;font-weight:500;margin:0;color:#FFD166;">5</p>
+          <p style="font-size:18px;font-weight:500;margin:0;color:#FFD166;">4</p>
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">AI</p>
         </div>
-        <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('Digital', document.getElementById('tab-Digital')); closeSidebar();">
-          <p style="font-size:18px;font-weight:500;margin:0;color:#C68642;">7</p>
-          <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">Digital</p>
-        </div>
         <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('Fintech', document.getElementById('tab-Fintech')); closeSidebar();">
-          <p style="font-size:18px;font-weight:500;margin:0;color:#FFBFA0;">18</p>
+          <p style="font-size:18px;font-weight:500;margin:0;color:#FFBFA0;">26</p>
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">Fintech</p>
         </div>
     </div>
@@ -100,19 +92,14 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
       
         <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
           <span style="font-size:11px;color:#FFD9BC;">AI</span>
-          <span style="font-size:11px;color:#fff;font-weight:500;">17%</span>
+          <span style="font-size:11px;color:#fff;font-weight:500;">13%</span>
         </div>
-        <div class="stat-bar-bg"><div class="stat-bar" style="width:17%;background:#FFD166;"></div></div>
-        <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
-          <span style="font-size:11px;color:#FFD9BC;">Digital</span>
-          <span style="font-size:11px;color:#fff;font-weight:500;">23%</span>
-        </div>
-        <div class="stat-bar-bg"><div class="stat-bar" style="width:23%;background:#C68642;"></div></div>
+        <div class="stat-bar-bg"><div class="stat-bar" style="width:13%;background:#FFD166;"></div></div>
         <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
           <span style="font-size:11px;color:#FFD9BC;">Fintech</span>
-          <span style="font-size:11px;color:#fff;font-weight:500;">60%</span>
+          <span style="font-size:11px;color:#fff;font-weight:500;">87%</span>
         </div>
-        <div class="stat-bar-bg"><div class="stat-bar" style="width:60%;background:#FFBFA0;"></div></div>
+        <div class="stat-bar-bg"><div class="stat-bar" style="width:87%;background:#FFBFA0;"></div></div>
     </div>
   </div>
 </div>
@@ -132,21 +119,21 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
   </div>
   <div id="news-list" style="flex:1;overflow-y:auto;">
     
-      <div class="news-row" data-tag="AI">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:00</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
-              <span style="font-size:11px;color:#888;">⭐ 10</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 7</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VQmltVjJkYnRhaGJELWZnVUVKOTliX0xpUG1QaktGMXlFMnhXaHZCdThDMkNVMUl6ajhyS1NzZHhVN0J6Q2V6bmFhakRJZUE?oc=5" target="_blank" style="color:inherit;text-decoration:none;">“해커가 골라서 공격하나”…핀테크·중소금융사 빠진 AI 보안대책 - v.daum.net</a>
+              <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBWTUl1NGtNbzZqSlN0ZUthMnRrbGNsNFFTYk81SVZlaUVLVTZUbDlKVm11TDdIM2NfRXVPV2MwMTdWbXFHRHBva2N4TldGc05pX0wyRzJ2bnRYaWduS0dPYmVMN0JlZWUwSU1TQdIBb0FVX3lxTFBMa01GWUwwMTYtV0d3N2txRGRyMERncG10NTNpWHdYWUpKUldzdGFWSUFKOUg5WDNlT0dHQWJXZHlWWG5LRVU0UmVTaDdieDFJTmVJWmdncWYtRzFMZ3V4T2UwS19aaWl0bW45VW5tVQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">디캠프·핀테크지원센터, 스타트업 OI 금융권 행사 개최 - 한스경제</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(예시) 가장 빠른 뉴스가 있고 다양한 정보, 쌍방향 소통이 숨쉬는 다음뉴스를 만나보세요. 다음뉴스는 국내외 주요이슈와 실시간 속보, 문화생활 및 다양한 분야의 뉴스를 입체적으로 전달하고 있습니다. 문제는 이 정량적 기준 탓에 카카오페이, 네이버페이, 토스, 뱅크샐러드 등 국내 대표 핀테크 기업들은 물론 케이뱅크와 토스뱅크 등 일부 인터넷전문은행마저 신청조차 할 수 없게 됐다는 점이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Sun, 07 Jun 2026 03:57:06 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">전세 계약 전 주택 상태를 확인할 수 있는 ‘세이프홈즈’ 서비스를 기반으로, 우리은행과 부동산 리스크 데이터 구조화 사례를 선보인다. 카카오뱅크와 정책 데이터와 금융 서비스 연계 사례를 선보인다. 본선 진출 스타트업에는 시상 외에도 디캠프 배치 프로그램 선발 검토, 금융권 사업 협력 및 투자 연계, 한국핀테크지원센터 기술실증 지원 사업 연계 등 후속 지원이 이어진다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:42:30 GMT</p>
           </div>
         </div>
       </div>
@@ -157,6 +144,42 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:01</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
+              <span style="font-size:11px;color:#888;">⭐ 7</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMbVFCYW9EVlBBSWlEUmpKakhzMjJrOHZuYWxXMkNmWjh5TTRYSnJFamwyZFhyNFBudDdKYjdFZmtiX2o5X2xQVVFzY3hKbWhPV2t3LUFqbm5ScGN0U3c?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원 핀테크 유럽 진출 지원…&quot;독일시장 공략 기회 확대&quot; - 아시아타임즈</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">유경범 네이버 클라우드 상무는 AI 시대 SCM(공급망관리)에 대해 이같이 밝혔다. 11일 트레이드타워 51층 회의장에서 한국물류과학기술학회와 한국무역협회가 주최하고 정석물류학술재단, 인하대학교 물류전문대학원이 주관한 '2026 서울콜드체인포럼'이 개최됐다. 기업에 맞는 사스를 검토하고 적용하는게 가장 중요하다&quot;고 조언했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="AI">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:02</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
+              <span style="font-size:11px;color:#888;">⭐ 6</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mV3VTTDd0bFgxMkhrMk9QQWpHVXBLZkd5LWUtbWZaUlZaczR5OVVKWkpEWkktSFhESDZySXR3dk1ob3ZxeXVBN0V5Um43bS1RR0ZrQ2pidUxFaDlfMGotdw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 독일무역투자진흥처와 '핀테크기업 유럽 진출' 세미나 개최 - 뉴시스</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[서울=뉴시스] 황준선 기자 = 11일 서울 여의도 금융감독원. [email protected] [서울=뉴시스] 황준선 기자 = 11일 서울 여의도 금융감독원.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="AI">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:03</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
               <span style="font-size:11px;color:#888;">⭐ 6</span>
             </div>
@@ -174,7 +197,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:02</span>
+              <span style="font-size:11px;color:#888;">오전 9:04</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
               <span style="font-size:11px;color:#888;">⭐ 6</span>
             </div>
@@ -183,42 +206,6 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
             </p>
             <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">국내 주요 핀테크 기업들이 외형 성장에도 불구하고 수익 모델을 찾지 못하면서 적자 수렁에서 벗어나지 못하고 있다. 금융 소비자 행동 방식을 바꿔놓았다는 평가와 달리 각종 규제에 발목잡히면서 유의미한 수익을 내는 데 어려움을 겪고 있다. 새로운 서비스를 내놓아도 결국 기존 금융 규제 프레임 안에서만 움직일 수 있어 차별화에 한계가 있다는 지적이다.</p>
             <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 27 May 2026 07:00:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Digital">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:03</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 5</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9kTVU1V1c1cnNSUUVoMTNUUThqdzhSS3pWR1dxSG5maExUdXhXZXZweEVnUDJSRTRjaEtPN0xvZjg5dTYyZ1F0RFUxT2t0R2pOVGNiQXhNLV9NOWNoUi1BRllMMWg4MUQ00gFsQVVfeXFMUHJxa1JodF9uVUVGcEpXNFdIOFM1WElWS2ozU0JkUFJfM3VvMWFvWTFRa0dqU0RTVVhyUHBtZXF6V2QtR1g1bEVvc0lTWDhZOTYwVEd1MDlOUzFDRkozWTQweHRobi1nbERNUmxy?oc=5" target="_blank" style="color:inherit;text-decoration:none;">카카오뱅크, 김우주 전 기아 전무 수혈…글로벌 3개국 사업 탄력받나 - 블로터</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">카카오뱅크가 글로벌 사업 확대를 위해 김우주 전 기아 글로벌사업관리본부 전무를 글로벌본부장으로 선임했다. 카카오뱅크의 인도네시아와 태국, 몽골 등 3개국으로 이어지는 해외 진출 프로젝트가 실행 중인 가운데, 전략 투자와 현지 파트너십, 모바일 금융 시스템 구축까지 아우를 베테랑을 영입한 것이다. 김 본부장은 앞으로 카카오뱅크의 글로벌 전략을 총괄하며 신규 진출 국가 발굴, 현지 사업 확대, 전략적 투자, 파트너십 구축을 맡는다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 02:14:07 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:04</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 5</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5fUnVXM01pY2lnVTdkc2FzM1ZxdE9ZYjZ3U19DS3lLRkVLalJfa09BUkVNbGx1U1JkWVN2UG9KVy1pUk5LZUxRZG82dWQ4Q1llbzdIMExwOHlNU09FMnNnSHdfSUE0M01pVkczak95cXg5RjNI?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[핀테크업체의 성장과 카드업계의 대응] ① 결제 주도권 핀테크 지배력 ↑, 카드 ‘흔들' - 파이낸셜포스트</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">네이버페이는 올해 1분기 결제액이 24조2000억원으로 전년 동기 대비 23.4% 증가했다. 여기에 네이버페이는 오프라인 통합 단말기 '네이버페이 커넥트'를 앞세워 오프라인 결제 시장을 공략하고 있다. 이를 바탕으로 온라인 검색·예약 데이터와 오프라인 주문·결제·단골 데이터를 연동해 온·오프라인 통합 데이터 순환 체계를 구축한다는 계획이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 05:24:29 GMT</p>
           </div>
         </div>
       </div>
@@ -251,10 +238,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9WRmlsbXYwenpDRXphVUlMcDhHbUtGcFJ6b0NUUDNLUU41X2lZZDRqQ2otbnV1M042UkY1NDFIcjhFVnJVTDM2MXpXNFhpcGRjYU0zcFp2bFFXcGVlUmJsclJSYmx1dG5LbjF1SmYxd3Q?oc=5" target="_blank" style="color:inherit;text-decoration:none;">Truist, 핀테크 투자의견 조정…BILL 하향·Global-e 상향 - Investing.com 한국어</a>
+              <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzVU5YMy1zVWloSW9MR0RWRmo2VUdyVmlxellmdzBXYWd5eVZ5U3FuUmRYbWMwajRaQW5FZVdkMndPb2VyNFdOMmpVS1lkbGRqWkJBYQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[넥스블록][현장에서] 핀투데이 데모데이 “토모로우, 블록체인 KYC로 핀테크 장벽 허문다” - 이투데이</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 16:27:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">업루트컴퍼니, 토모로우 등 6개사 참여 제2서울핀테크랩은 유망 핀테크 스타트업의 성장을 지원하는 서울시 BI(Business Incubator)다. 투자연계, IR컨설팅, 오픈이노베이션, 글로벌 진출 지원, 네트워크 연결까지 스타트업의 성장 여정 전반을 함께하는 입주 및 육성 프로그램을 운영하고 있다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 08:43:00 GMT</p>
           </div>
         </div>
       </div>
@@ -269,10 +256,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE0yNGszV3M2UVdUR29DTTZFV1FTNjcxNHN3SjVLNDFtQ1BsUVBZbXk3TkpteXB6UXR2cXRvdWNqRnZOZXN3azNaMHQwTTN1Mlh5REJoanR4YjN2SV9lLXZITk43dVBGNF9pWTUzNnNXTEE5b1pJWl9Ieg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">핀테크 IPO 재가동…더 복잡해진 상장 셈법 - 네이트</a>
+              <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KeGlPOUhFbkk5cnJ1YlM3VENjNUxEYzhzY05BY3NuUXd1R1pZdWNZNlBYQzVldy1ZMGRENEc2dXMwaVJsLTBxX0pQVVpRNlZWejdz?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[단독] 핀테크·금융사, 여전히 '엇박자'…소비자 혼란만 '가중' - 네이트</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">국내 주요 핀테크 기업들이 잇따라 IPO(기업공개) 준비에 나서고 있다. 손실 규모를 크게 줄인 만큼 올해 흑자 전환 여부가 상장 준비 과정의 주요 평가 포인트가 될 전망이다.트래블월렛은 일본 서비스를 시작으로 미국 등 해외 시장 진출도 추진하고 있다. 향후 외환 결제 노하우를 기반으로 B2B(기업 간 거래) 금융 솔루션 사업을 키워 수익원을 다변화하는 것이 과제로 꼽힌다.해빗팩토리는 보험 관리 플랫폼 '시그널플래너'와 미국 주택담보대출 사업을 앞세우고 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Tue, 09 Jun 2026 19:56:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">프라임경제 대출비교 플랫폼에서 대출 가능 상품으로 안내받았지만, 정작 금융사에서는 최소 취급 금액 요건에 미달해 신청조차 할 수 없는 사례가 계속 확인되고 있다. 플랫폼과 금융사 간 정보 연계 과정에서 안내가 여전히 제대로 이뤄지지 않고 있어 소비자 혼란만 가중되고 있다는 지적이 나온다. 페퍼저축은행 관계자는 &quot;간편한도조회는 제한된 정보를 기반으로 산출되는 예상 한도이며 실제 한도는 본심사를 통해 최종 결정된다&quot;며 &quot;이 과정에서 조회 단계의 한도와 실제 취급 한도 간 차이가 발생할 수 있다&quot;고 설명했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 02:54:00 GMT</p>
           </div>
         </div>
       </div>
@@ -287,10 +274,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UWlFNZmRjRHpJRUUyM2g5Si1CampDb01TOWQyOE5jT2ttVHgyN2ZhdUxOZlZmanpCTkV1S0tJT0lGdWFLTnBNMTN4WDVpTnM?oc=5" target="_blank" style="color:inherit;text-decoration:none;">스타 쉬 OKX 대표 &quot;증권사도 거래소도 결국 핀테크 될 것&quot; - v.daum.net</a>
+              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9VaHZNd3BxV0FGdFhaY0JDeWtSRmtlMVJiTDhtX1FQR0VqcE8zUkVHTGFMQjRhODYzRURMWXAzaWxMbXdwTmZEbl8xRkx4MjE2NlhXdWs5Zm55ZDkwenNCVdIBYEFVX3lxTE9VaHZNd3BxV0FGdFhaY0JDeWtSRmtlMVJiTDhtX1FQR0VqcE8zUkVHTGFMQjRhODYzRURMWXAzaWxMbXdwTmZEbl8xRkx4MjE2NlhXdWs5Zm55ZDkwenNCVQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, '핀테크 유럽진출 지원 세미나' 개최…시장다각화 모색 - 연합뉴스</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(예시) 가장 빠른 뉴스가 있고 다양한 정보, 쌍방향 소통이 숨쉬는 다음뉴스를 만나보세요. 다음뉴스는 국내외 주요이슈와 실시간 속보, 문화생활 및 다양한 분야의 뉴스를 입체적으로 전달하고 있습니다. 스타 쉬(Star Xu) OKX 대표는 어제(4일) SBS Biz와의 인터뷰에서 &quot;한국은 혁신을 존중하는 국가이며 글로벌 가상자산 산업에 중요한 영향을 미치는 시장&quot;이라며 &quot;현지 파트너와 협력하는 것이 한국 시장에 진출하는 가장 적절한 방법이라고 판단했다&quot;고 말했습니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Fri, 05 Jun 2026 01:54:03 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(서울=연합뉴스) 강류나 기자 = 금융감독원은 국내 핀테크 기업과 금융회사를 대상으로 '핀테크 유럽지출 지원 세미나'를 열었다고 11일 밝혔다. 이번 세미나는 동남아시아에 집중된 금융사들의 해외 진출지역을 다각화하기 위해 마련됐다. 독일무역투자진흥처는 독일 연방경제에너지부 산하 무역·투자 진흥기관으로, 외국 기업의 시장 진입과 법인 설립을 지원한다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:02 GMT</p>
           </div>
         </div>
       </div>
@@ -302,13 +289,13 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:09</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mbW5UMklrYk91OWxQSVZ1UjZUN003cHl2UnNXWjRmVUxNNzEwWnBsQTRaZ3R1N25nTGNzT0pmS0NKNmlQd2FvRXJfTXA5Sk9BdVd3NlM5aE9Fdkh4a2UxZW1wUmc?oc=5" target="_blank" style="color:inherit;text-decoration:none;">원화 스테이블코인 시장 주도권 전쟁…은행·핀테크 ‘이합집산’ 가속 - 데이터뉴스</a>
+              <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9iY29QbXRSUFBnTmpnUEd0dkZKLVozdlVrWk5tWXNmdTVvZG5hdEg4MjhuRjdMYklzaHh6MVVPdjJEYURYUUtZSmZnV3BHay1LWXdqVmZsd3A3VVgyRE4tal9uTGJFQW9CS3c?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금융감독원, 핀테크기업 유럽진출 지원 세미나 개최 - intn.co.kr</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">디지털자산기본법 2단계 입법을 앞두고, 원화 스테이블코인 시장 주도권을 둘러싼 금융권 경쟁이 본격화하고 있다. 하나금융이 업비트 운영사인 두나무의 주요 주주로 올라서면서, 국내 은행권의 디지털자산 경쟁은 급물살을 타고 있다. 이 경쟁의 방아쇠를 당긴 것은 하나금융이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 08 Jun 2026 23:49:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">Germany Trade and Invest는 독일 연방경제에너지부 산하 무역·투자 진흥기관으로서 금융, 핀테크 등 독일의 핵심 산업 분야에서 외국기업의 시장 진입과 법인설립 지원을 담당한다. 동 세미나를 통해 독일 등 유럽 금융·핀테크 시장 특징과 진출방안을 소개함으로써 동남아시아에 집중된 해외 진출지역 다각화와 금융회사의 신사업 개척을 독려했다. 독일 경제·금융시장의 특징과 핀테크 관련 유럽 진출지로서 독일의 장점을 소개했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
           </div>
         </div>
       </div>
@@ -320,13 +307,13 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:10</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1aVk1sMDB5RjRtV1FHVDBwNnRFVS1GS1lfRzF1d0ZvOHV4MUdaajJxejZJUGdlQjRQTDA2dFBwSGZNMHJHN2Y5UUw3bFlSWjFua01aSDFNT0k?oc=5" target="_blank" style="color:inherit;text-decoration:none;">쓰리제인, 신규 금융상품 출시 예고⋯“미국 핀테크 신용시장 수익을 온체인으로” - 블록미디어</a>
+              <a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE5vSDMzSUsybEJpM0hLSVgwZ2l4S282ZWpBZWE3TnlnNmlVY2hpQnJWRXhULTN2UTREa1NaY3Rtb1ZvbnhTX2dUTDBKYks?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 국내 핀테크 기업 독일 시장 진출 지원 - 아이뉴스24</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[블록미디어 황효준 에디터] 온체인 에서 신용 기반 대출을 구현한 쓰리제인(3Jane)이 “디지털자산 시장과 실물 금융을 연결하는 다음 단계를 준비하고 있다”고 밝혔다. 쓰리제인은 지난 5월 사업 영역을 핀테크 대출 시장 전반으로 확대했다. 쓰리제인은 “자세한 내용은 순차적으로 공개할 예정”이라며 “이번 발표가 온체인 금융의 새로운 가능성을 보여주는 계기가 될 것”이라고 밝혔다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 07:05:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[아이뉴스24 임우섭 기자] 금융감독원이 국내 핀테크 기업의 독일 금융시장 진출 지원에 나섰다. 금융감독원 건물. 2024년 기준 독일 핀테크 부문의 수입은 유럽 2위, 투자유치 금액은 유럽 3위다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:02 GMT</p>
           </div>
         </div>
       </div>
@@ -341,10 +328,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTREFsajBlWGh3UmlTWEJBTVk3Ujd4ODBtbGFkOTBCSDhTUW1vYXdzb1NIbmk5UFo4SDJJSjZPUjVqSHBFdV9lUlNEQXJ5bTlWcnM2NQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">3200억달러 시장 열린다…원화 스테이블코인 놓고 금융권 각축전 - 매일경제</a>
+              <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBEYjF4eGNDYmhLdXEtc1FtQWhCZ3hTZ01qUzZkYmJoeEt4VTlVR2pHaHZTV0VueW9YeTd6VFJ0NjlnSGY3NDgxYnNfcUR0QQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">디캠프-핀테크지원센터, '스타트업 OI #금융권' 개최…5개사 협업 성과 공유 - 전자신문</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">가상자산 거래소 역시 제도화 과정에 높은 관심을 보이고 있다. 원화 스테이블코인이 제도권에 편입될 경우 거래 중심 플랫폼에서 나아가 다양한 디지털 자산 서비스로 사업 영역을 넓힐 수 있기 때문이다. 업계 관계자는 “원화 스테이블코인이 도입되면 디지털 자산 생태계의 활용 범위가 크게 확대될 수 있다”고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 08 Jun 2026 02:24:10 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이번 행사에는 9대 1의 경쟁률을 뚫고 선발된 고이장례연구소, 테라파이, 티냅스, 왓섭, 웰로 등 5개 스타트업이 금융기관 협업 담당자와 함께 무대에 오른다. 각 팀은 협력 과정에서의 문제 해결과 기술 기반 시너지, 사업 성과, 향후 비전을 발표할 예정이다. 왓섭은 결제·가맹점 데이터를 소비 패턴 중심으로 구조화하는 기술을 바탕으로 신한카드와의 협업 사례를 소개한다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 02:51:15 GMT</p>
           </div>
         </div>
       </div>
@@ -355,6 +342,240 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:12</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBubXNGS3F0dFBmZXNLVHJ0SHVROHZELVI3cmZLNUxTbVJSTGtJZWRRdjNMdTJCRGtSNzhjUGZhSUdRajdBc0RxSnhGeU95UUpNZHJYZXFB?oc=5" target="_blank" style="color:inherit;text-decoration:none;">우리은행, 방한 외국인 전용 디지털 지갑 만든다 - 헤럴드경제</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">핀테크 스타트업 크로스허브와 맞손 이번 협약은 외국인 관광객이 국내 금융·결제 서비스를 이용하는 과정에서 겪는 불편을 줄이고 외국인 고객을 위한 디지털 금융 서비스를 강화하기 위해 마련됐다. 양사는 외국인 전용 디지털 지갑을 하반기 출시 목표로 공동 개발한다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 02:34:21 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:13</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFamNXMm9xYktaMHFjSERSM2ZyOURTdGkxN3dIQ3gtSlVRbEZlaFl3YTlpNU9saFVTazVNbUpFTGUzaXc2dmF2SndNcnQxc1Y1YWp0ck41MDBCbkxWTUVKMGF3?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 핀테크 유럽진출 지원 세미나…&quot;해외 진출지역 다각화 독려&quot; - 뉴스1</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:14</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE00SDgzemR5Nl80YkE0LVRRMDdPVmZlREcyUGtmcHVxelA3X05aNHI4RXE4VFpxeERJX2VlTHFFa2xOMDkydHhwOHpDQmZkTV9DamI2VkRYX0dFVXNXNFZXdXQzUVVrQ01iQXNZ0gFwQVVfeXFMTlBSY2VtTTZlLVdRUjdnNVliUVZ3YUR3S2xINE0wZG5kNUh4SXZ2WHhRb0tGQzNmaDBIY3lOM0twa01Td3VoWHA2ZDJqOWJXZWNLbVg3T0RwZjd5Q0R5dW9LR3c5TXVuajNESjI5LTM5Tw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">K-핀테크 유럽 공략 시동…금감원, 독일 시장 세미나 - 머니투데이 - 머니투데이</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울 영등포구 여의도 금융감독원 전경 /사진=김도엽 기자 이번 세미나는 독일 등 유럽 금융·핀테크 시장의 특징과 진출 방안을 소개해 동남아시아에 집중된 국내 핀테크 기업의 해외 진출 지역을 다각화하고 금융회사의 신사업 개척을 지원하기 위해 마련됐다. 독일 핀테크 시장의 성장성과 경쟁력도 논의됐다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:15</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBrMGhNbzV1YkVhdFRuSVhrR09kU1JNQUQ4ZDN0bUxpdXZEM1RzczZsMkpOOW1pUTZVYk9wV0VJc2xYc3JXRjFrdUVZLXdST3VCRG9fZ3RKTEFEOWVzV2xlLVNCM21FYzVDdzlMaWUyVQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">핀테크 해외진출 다변화 나선 금감원…독일 금융시장 기회 소개 - 조세일보</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:16</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFA1Skl6YWdscThZWUxObjliN3k4eG5YQUF5TlNoajQzbXViaGpMT2VpbFplM1VaZkFCbzFpcTFRNTZjVlpsaC1HejV6VQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 핀테크 유럽 진출 지원 나선다…독일 진출 전략 공유 - v.daum.net</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(예시) 가장 빠른 뉴스가 있고 다양한 정보, 쌍방향 소통이 숨쉬는 다음뉴스를 만나보세요. 다음뉴스는 국내외 주요이슈와 실시간 속보, 문화생활 및 다양한 분야의 뉴스를 입체적으로 전달하고 있습니다. 금융감독원이 국내 핀테크 기업의 유럽 시장 진출 지원에 나섰다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:01:03 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:17</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE5sX3EzYXozVW85cU9qajhMXzRTSGVScW16R0xJdVZqa3M2S2g1ZGN0VmNXaDFwdzRrTEozTnBYT2tqRjgtTmpFSXJWUmF2Zw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, '핀테크 유럽 진출 지원' 세미나 개최 - 전자신문</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">한국경제인협회에서 11일에 열린 이번 세미나는 독일 등 유럽 금융·핀테크 시장의 특징과 진출 방안을 소개하고, 국내 핀테크 기업의 해외 진출 사례를 공유하기 위해 마련됐다. 금감원은 동남아시아에 집중된 해외 진출 지역을 다각화하고 금융사 신사업 개척을 지원한다는 취지라고 설명했다. 독일 핀테크 시장의 규모와 경쟁력도 공유됐다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:18</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TeGNiS1dfMXdpSjFka1lKb0JiU2NzU0taTVBuNW04YmRYOWhPaDl1bmluMnhLR3AtMDI1RnZXeVNDNzJjY1A2VnBEZENqaXExUGp2MXptMmJIa19OQzg0dUZIUElXY0N5?oc=5" target="_blank" style="color:inherit;text-decoration:none;">유럽 노리는 K핀테크…금감원, 독일 시장 진출 지원 - ebn.co.kr</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">세미나에서는 독일 핀테크 산업 개황과 진출 환경, 국내 핀테크 기업의 유럽 진출 사례가 소개됐다. 프랑크푸르트, 베를린, 뮌헨 등 주요 도시는 특정 핀테크 분야가 기존 금융 부문과 협업하는 방식으로 발전하고 있다. 해외 진출 경험이 있는 국내 핀테크 업체가 유럽 시장 진출 과정에서의 실무 경험을 공유했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 07:09:30 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:19</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYT3gyTE9yOVA4UVZjcC1sS0ZzNUhSRVdMVmIyRElTdURkSklKRUZkYklNeUM0QW5WS2xVb0hNT3QyMHltSHBCaFBNYU9ic0k?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 핀테크기업 獨진출 지원세미나 - v.daum.net</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(예시) 가장 빠른 뉴스가 있고 다양한 정보, 쌍방향 소통이 숨쉬는 다음뉴스를 만나보세요. 세미나에선 독일 핀테크 산업 개황 및 진출환경, 국내 핀테크 기업의 유럽 진출 사례 발표를 진행했다. 주요 핀테크 허브 및 관련 협회, 이벤트 및 주요 유니콘 기업 등 독일 핀테크 생태계를 소개하고, 국내 업체 사례 발표를 진행했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:01:24 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:20</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE93S3RzRGRranhOWkxTQmRpSjhIRUJLbmdqWUw1WjhrLUVRS1hvczVjb0I1MGg0NkxlN0NSbFM5Z0V4cWVhMDhaam5oZkhCT2RoMXZ0dkhjSEtvZHpEcFUtWA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">동남아 넘어 유럽으로…금감원, 핀테크 해외진출 지원 - 메트로신문</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">금융감독원이 국내 핀테크 기업의 해외 진출 지원에 나섰다. 또 독일 은행과 핀테크 기업 간 협업 사례와 핀테크 이용자 확대 추세, 중소기업의 핀테크 도입 현황 등을 소개하며 국내 기업의 진출 가능성을 설명했다. 이날 세미나에서는 해외 진출 경험이 있는 국내 핀테크 기업의 사례 발표도 진행됐다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 05:30:06 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:21</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE50bzhDd1RCaHJySzlVeEZ3MXNfZXl3Smdpc0ZnQ0pnaXkzZ3JnY3JJRHF5MXEyNkpjNUNhWXRvRDJPWlQxX2c?oc=5" target="_blank" style="color:inherit;text-decoration:none;">디캠프·한국핀테크지원센터, ‘스타트업 OI #금융권’ 개최…5개사 협업 사례 발표 - beSUCCESS</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">beSUCCESS is a professional media company with a particular focus on startups and tech industry | beSUCCESS는 국내 기업의 해외 진출을 지원하는 미디어 회사로, 실리콘밸리를 포함한 전세계 테크 트렌드와 스타트업 뉴스, 기업가 정신 등 국내 스타트업의 인사이트 확대를 위해 필요한 외신 정보를 직·간접적으로 제공할 뿐만 아니라, 한국의 스타트업 생태계와 출시 소식 등 주요 뉴스를 영문으로 세계 각국에 제공해 한국 스타트업의 글로벌 성공을 지원하는 '연결'의 역할을 합니다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 05:00:42 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:22</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE82ZjJtSnlsU1hwS3hEQlBUM2hsdG0zSHVXSjV0SXZPRWRpeGFKSTEya0sxZFc0T3AwRGtBYXpWUjRheVhSM2tCVVIwQXFVcU92ZHdTMDBoTnR3c0l6c0hwctIBeEFVX3lxTFBPcHl2TzVseTEyRkw0blJ5R1NSTEdYdENCSDdLYkRJbTNlbm5ocElhcWxUc2h5V0FhTHp4dzBEWmxZeFdsMEgzVlVaaUtEYVhVLXNYLUpaOTJWcm5TWUFkcjNDQmstZFBna1lhQ19uRXJrWTU0aC1BUg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[올댓차이나] 알리바바 핀테크사 앤트국제 10억＄ 조달 추진…&quot;홍콩 상장 가시권&quot; - 뉴시스</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 14:55:57 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:23</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5tWXNKRnRsV2tmSFgzUnVWUkl6b3BMSHNOekhLWkxPeWhnbkNQT2ZYNGJIbDBIWnQwRlhkWkFTUGhyVUJKNGszbllMZTJJMnY2Y0lPYnRSQ0RZMDhLODR5UnJpVU9DQVhnbDFGb05vYjRUMmRj?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금감원, 핀테크 유럽 진출 지원…독일 시장 공략 정보 공유 - 파이낸셜포스트</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">그동안 동남아시아에 집중됐던 핀테크 해외 진출 지역을 독일 등 유럽으로 넓히고 금융회사의 신사업 발굴을 돕기 위한 취지다. 독일을 중심으로 유럽 금융·핀테크 시장의 특징과 진출 환경을 소개하고 실제 진출 사례를 공유하는 방식으로 진행됐다. 다수의 해외 진출 경험을 보유한 국내 핀테크업체는 유럽 진출 사례를 발표했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 06:00:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:24</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBrV1p3SWRzR1ZSdjd6c2Eza09JdTFzSnh1UG04ODhyZTFjUURmdGU4anB5di02VDBGNjVZTHBQMnY0TkM5WEZ0WF8wb05nMWJwU0NURUhVTF9vOHcwV0FDQnZLVmNkSTBW?oc=5" target="_blank" style="color:inherit;text-decoration:none;">우리은행, 핀테크 기업과 손잡고 외국인 전용 디지털 지갑·선불카드 개발...국내 결제 편의성 개선 - 레디앙</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">우리은행이 혁신 핀테크 스타트업과 방한 외국인 관광객들의 국내 결제 편의성 개선을 위한 전용 디지털 인프라 구축에 나선다. 이번 협약은 외국인 관광객이 국내에서 금융 및 결제 서비스를 이용할 때 겪는 불편을 줄이고, 외국인 고객 대상 디지털 금융 서비스 강화를 골자로 한다. 양사는 올해 하반기 출시를 목표로 ‘외국인 전용 디지털 지갑’ 공동 개발에 착수한다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 01:47:02 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:25</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
@@ -372,249 +593,15 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:13</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wVmtoQnk1akFmLWE0YmttSnAweVZveWYzc05YM2RXQ3U2OU04MWRlM2lUeHRXUW92WG9ZbkVJS2ZGN1FlRmlfZk9HenNIV0pIb1ZZWVljTXZRckNvZ015UW5SY3h4azdzaWJ2SEx3TdIBc0FVX3lxTFBmNUZwQmN4S283M3JockZCVjg5TW1QMWs3RWI2eFlCZnJ3VHA2bEI0RjVBcjY0Nk5CbDB3TjdFZ2oydl9SNGlLSGVib3gzLTZKLVlzNXhLaElrWmxKeVVNN0pKS0hFSm9jYWM1NW9tbFFCYmc?oc=5" target="_blank" style="color:inherit;text-decoration:none;">2026년 6월 11일. 오늘의 핀테크 소식을 알려 드리겠습니다. - 핀테크투데이</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[SNS insight] 김주덕 법학박사 / 대표변호사의 페북에서......호국의 별들에게 드리는 감사 호국의 별들에게 드리는 감사김주덕 법학박사 / 대표변호사유월의 하늘은 유난히 맑고 푸릅니다. 바람은 초여름의 향기를 품고 불어오지만, 6월 6일 현충일이 다가오면 제 마음 한편에는...</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 15:05:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:14</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhZ2J6MHdZWlc1bmFtbnFUQVFlRmFBUGdhTVJQUTl6Z2pTcjFRWFRuTlJWcjRyWkJOY2YxTHgxMDQ0Y19hRFptWmg3Mm1XRVRC?oc=5" target="_blank" style="color:inherit;text-decoration:none;">中 '핀테크 공룡' 앤트인터내셔널, 10억弗 조달 검토…&quot;홍콩 상장 채비&quot; - 블루밍비트</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">中 '핀테크 공룡' 앤트인터내셔널, 10억弗 조달 검토…&quot;홍콩 상장 채비&quot; 중국 핀테크 기업 앤트인터내셔널이 대규모 자금 조달에 나선다. 블룸버그는 소식통을 인용해 앤트인터내셔널이 10억달러 규모의 자금 조달을 추진하는 방안을 검토하고 있다고 10일(현지시간) 보도했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 09:19:32 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:15</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOcW1qQlFtTkJZMXhTSXFXcXhQTHlaUU9UbkpJSUJ2cVQ0MFdkNlBkTl9KeFloZjRJU0ttNnJmWm1GdGVrbjY1eGNaeVcwcThXY3ZtMTBra3JqTFN6a2J0bmNYdFJaeWdJSW1KRjRjb0lQZG92MENxcnhERzB2MDhxZ3VBQmxISTBPMl9fYmVMNDRpcms?oc=5" target="_blank" style="color:inherit;text-decoration:none;">아세안 핀테크 생태계 육성: 정책에서 실천까지 - Vietnam.vn</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">응우옌 반 탕 부총리 를 비롯해 각 부처, 분야, 기업 관계자 및 국내외 전문가들이 참석한 가운데 &quot;지역 핀테크 생태계 구축: 정책에서 실천까지&quot; 세미나가 개최되었습니다. 이번 세미나에는 통사반 폼비한 라오스 부총리 겸 외교부 장관, 베트남 정부 부처 및 기관 책임자, 그리고 국내외 기업인과 전문가들이 참석했습니다. 이번 논의에서는 디지털 전환 과정에서 역내 경쟁력, 회복력 및 연결성을 강화하는 데 있어 민관 협력의 역할이 강조되었습니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 07:35:47 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Digital">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:16</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lSXdfdVVjRFVsLUIzdmFOV2Z4aXZxb05CWEg1aHh3ZTFxWF9Bc0RPTnpnRkUzdVZ0VTRkaEs0VGlsdWx1S3Z2ZEhwY1BFN2JhbVBONVBxQ1JzMWdrMkxsWtIBeEFVX3lxTE1DS0Z4UVdIaXRaaXFKTE96cElnYXF2ZmRtbXVNNnB3dTFaUEdOR3hSa3lERUJ4TVA5UFdYLWJQUmhnbXlkUEsxZXNBRmFIcl9CdkNwdFZiOTV3WW1zWU56bVJVekE2Q3V0WGJldF92VjZDZHl4Vzg0Tw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">한패스 &quot;비송금 플랫폼 거래액 5년간 240배 성장&quot; - 뉴시스</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 23:20:39 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:17</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfRnUyMEt4OEhYOU5KMlVsMmJvVl8xOGxiV0V0RktVak9Od1Q5Z2ZQQ2RUa1V2UFJOeWlJWDE5dmVyQmppQmR5YTRia1ZwN0hwNkh6ZVZVakxBSENOWGQ0?oc=5" target="_blank" style="color:inherit;text-decoration:none;">iM금융그룹, 핀테크 스타트업 육성 프로그램 ‘피움랩 8기’ 출범 - 경상매일신문</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Sun, 07 Jun 2026 10:15:14 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Digital">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:18</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tWkw2UEgxSzBqb3Nobk9aQk8xM25PVkY0MzRXd2pTa0Yxdm9IRTktaWlGUGJHaFRpeUpSWlZjZEJ3MjBmQWVEQlZOcTVhd3V6ZllNWnd6SldVRXpjSGN3TE5OYWFWT0dh0gFuQVVfeXFMTkRFdFlEdUYyeFNDbUJOamhQbEllUXdjcFJ0ZkNRNThOMjNLbDBHREJSM0Q1S3lhb3I0NVNCbWM0Qk9WYXloVjBBOXZiaGFNcUVkc3lpWkI4Q2ZUem5WYzRsMUNYZWtyeThrcWpwc2c?oc=5" target="_blank" style="color:inherit;text-decoration:none;">한패스 &quot;비송금 플랫폼 거래액 5년간 240배 성장&quot; - 머니투데이 - 머니투데이</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">한패스의 비송금 사업 거래금액은 2021년 약 11억원에서 2022년 약 290억원, 2023년 약 1059억원, 2024년 약 2185억원, 2025년 약 2653억원으로 연속 우상향했다. 그 중 체크카드 사업의 성장이 두드러진다. 사업 초기 단계였던 체크카드 서비스는 4년 만에 한패스의 핵심 비송금 매출 축으로 자리잡았다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 23:50:51 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:19</span>
+              <span style="font-size:11px;color:#888;">오전 9:26</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
               <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NeXFtNDBNVkc0b3RMSUYzRUZqdkQzN2oyamwzaE5JdnZ1dUI5X01CTU05cnZXaVF3U2NFb2VNT0ZSdGVfVURBVUxydE1rbnBPNnfSAVNBVV95cUxOVEtJMW1rY3dtSTJmU2FBMVhwMWhuV2pVZlVsMjY5ZW0xNEE3dU85MWpsdkZGdV85RUcyWjdXTkNaekl1aUV5MmtZcVEwZlNIcFR1cw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[로터리] 글로벌 핀테크의 달라진 경쟁 - 서울경제</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(본문이 존재하나, 요약 결과가 불충분함)</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
             <p style="font-size:11px;color:#aaa;margin:0;">Google · Sun, 07 Jun 2026 09:09:07 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Digital">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:20</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5SUG1fX3U0S1dxcnBzOF9pOHlWMVdOWnQ1UEc1RlpGaUV3UDdaX3dsVllLeHJsY2NwNkt5Rk5aZFpyQnpQQnQ0MWhfMkMycm1IbmU5azZsTXR4MlVGWmZnSm9kU1FaQQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">美친 자산 토큰화 열풍인데…韓은 아직 '조각투자'[월가 뒤흔든 토큰혁명]⑩ - 뉴스1</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 21:40:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:21</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE92V09NWjJFdkZSam5rMUdvb3hldHFMUmh5b2xaLWxFSDQ5S0hhQVZjUEhaZlRjS0M5eHh3SllpZ2p4MHVIUEJWRWpfa01EQ1NzQzlzblVR?oc=5" target="_blank" style="color:inherit;text-decoration:none;">쿠콘, 싱가포르 핀테크와 협력…외국인 관광객 환전 없이 결제 지원 - 지디넷코리아</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이번 협력은 해외 간편결제의 국내 사용을 넓히기 위해 추진됐다. 해외 관광객의 소비를 이끌어 국내 골목상권을 활성화한다는 취지다. 쿠콘은 각국의 결제 표준을 국내 인프라에 최적화해 상생하는 결제 생태계를 조성할 방침이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 08 Jun 2026 07:05:49 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:22</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9SdTBCelY1S2g0THZKd1Y3eEtlbW9QdG9nZkg4b1pHTW1OWXBzRVJ6ek45czFZXzdJeHg5N0xQenJ0YXZMR0l5MXd2Sms1UEhNZE41LXNkLXNENDVndnJtNVR3MjBzZENXcUhOSVBnUXpGN0k?oc=5" target="_blank" style="color:inherit;text-decoration:none;">캠시스, 안면인식 카메라모듈 사업 확대…보안·핀테크 공략 본격화 - 마켓인</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 08 Jun 2026 00:13:49 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="AI">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:23</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBfc2w3X045andqOEk5ajNKUmxuRmZwS2N2amhUbnQwaEtyS0dXa1NNRkZPRTktY1AzclBDRzFWU2NxbHo5cGlqeWZVS2hUOHI0dDRVcVcwXzBSd0ItdzlVU0gwTkI1Q1h00gFsQVVfeXFMUEhGUWtuLU9qTS16SVhRUTBVMDcwT1o0UE1NODJRNzVIdVk1MWNGUHBWYzN2RmZ1T2h2WTFWMWhPc1MxU0tvRWtsZjVDNTlXX1ZTemJkT29tbldRa0hLME03aGtVUkJkRVJ2WjNp?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금융AI 망분리 빗장 푼다…해킹·피싱 책임 소재 논란 지울까 - 블로터</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이억원 금융위원장 /사진=김홍준 기자</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 07:00:03 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:24</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9aMTlBZDBleTRHZDU1SW8yMFl1VVczRmFodkJDQmRKT2NfSzVfYkNKOUw3NGlrQ0Rvek05UzZhaThDUTRqdXJuZm05VTNqMkpGanlRMUo2aVVfank2dzZmRHdOb2JvajhtZmtzMnVRSENNc0k?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[핀테크핫이슈] ELS 과징금 '6000억'으로...지방선거 끝, 금융정책 방향은 - 디지털투데이</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">⦁코스피, 브로드컴발 충격에 8200선 급락...매도 사이드카 발동 ⦁코스닥, 3개월 만에 1000선 붕괴... 5%대 급락 금융권의 생산적 금융은 단순한 자금 지원을 넘어 실물경제의 성장 기반을 뒷받침하는 방향으로 확장되고 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 08 Jun 2026 22:30:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="AI">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:25</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
-              <span style="font-size:11px;color:#888;">⭐ 0</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFB3VDBoX1lYM3JGa2ZvQ1h1aEVIVmgzdmpMMHZsWUZPaThWNi1FS05iX2lrbkhVUVVna0I0TDc4TzRob1laMWRWUmR3TS1mbHg4Sjd0SEJPbFJlX3dTeVpGS3VodUR6cVQyX3NNV0s1cHQxY3M?oc=5" target="_blank" style="color:inherit;text-decoration:none;">AX 시대 '보안·소비자보호'도 걸맞게...금융권, 대응체계 손본다 - 디지털투데이</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[사진: ChatGPT 생성이미지] ◆이억원 &quot;기존 방식 과감히 탈피할 것&quot; 주문 금융권의 소비자보호 부담은 더욱 커질 전망이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 07:49:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Digital">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:26</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 0</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nb3dsQVUtd0V3M1A0cGxEYjlrSnNhYkxkTFVFMFJtSWxkMHh6SnlBSlRoWTVjaE1hQkJJLWZCRlEzSzAxZjlsVG9fdzlFV3Nra0J6V2FuRGduZnB6ODJlVmgtR1REQUlF?oc=5" target="_blank" style="color:inherit;text-decoration:none;">공연 업계, ‘월드’ 인간 인증 티켓팅 실험 시작 - 테크월드</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[테크월드=이광재 기자] 월드가 아티스트들이 실제 팬을 위해 티켓을 별도로 배정할 수 있도록 지원하는 신규 솔루션 ‘콘서트 키트(Concert Kit)’를 발표했다. 이 솔루션은 지난 4월 미국 샌프란시스코에서 열린 앤더슨 팩(Anderson .Paak)의 DJ 프로젝트 ‘DJ 피위(DJ Pee .Wee)’ 공연에 처음 적용됐다. 월드에 따르면 공연 업계는 오랫동안 티켓팅 봇과 자동화 구매 프로그램으로 인한 문제를 겪어왔다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 01:00:00 GMT</p>
           </div>
         </div>
       </div>
@@ -626,49 +613,49 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:27</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 0</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA5TlpMVG51WE1JTjZaR1FBT1JVdHFyYmdzT3JtYjNwdXZza0RweDRIVjNMM2x2Zm1VbVV5QXBNdzdSTXF2WGVaUGZpWnVCSmt0NGJBR1puNFZvZTl2ejhNNmJaM0pMQWpqZ2VsVUFUOEbSAXRBVV95cUxPdHBNUGFTVVUtS2VZNmx4cWVOTmcxMUdLWlZZSjRWV1pXZ2FXdElCMkcycVFTWXA5SGZXeDRkWnp2TGw4dnFGaVZ0MEszQUcyaldNMDRxTHcwOElCd25mNmlReTNfbXZJRGowTXBVZjlDWTRoQw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">“韓 스테이블코인 선점”… 보폭 넓히는 해외 코인 기업 - IT조선</a>
+              <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNOXlfRFFwbzYyUzBfczc2T1ZNNGE5VGR4WGE2RmhDVFN6Q2txUUxBajZZYWJVZTdIa2RYdXJEalRUN0sxamh3aGN5MlNtVjFPX19zeTUyZ21yeVlDRFV5YzRmNl84Z1JHamoyNlFHdjNzcjdPZlJSaFpTekx4bXJudW90OHFNZldlSVZ0SA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">FPT CEO가 아세안 핀테크의 최대 기회를 지적했습니다. - Vietnam.vn</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">글로벌 스테이블코인 발행사의 국내 상표 출원이 잇따르는 가운데 해외 가상자산 거래소 역시 한국 진출 의사를 드러내며 시장 선점 경쟁에 나서는 모습이다. 올해 상반기만 5건, 지난해 8건으로 최근 2년 사이 집중됐다. 이같은 움직임은 최근 국내에서 원화 스테이블코인 논의가 본격화되는 흐름과 맞물린다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 21:00:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(본문이 존재하나, 요약 결과가 불충분함)</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 02:36:59 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="Digital">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:28</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
-              <span style="font-size:11px;color:#888;">⭐ 0</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE93VTh4aUVJS1NxMEd3VlItd0FOeVpabDR1SzNqQlk4OGhac2FycDNndUt0dzVxRmthSUlxYnd2eTNaZ0dpM1dUaXZKYk1iWXpBYlpnamQxdEg0TWViSjc5SUt4aExoajFh?oc=5" target="_blank" style="color:inherit;text-decoration:none;">KB국민은행, 국토부-HUG와 협력 청년 전세사기 피해자 지원 확대 나선다 - 테크월드</a>
+              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9BTTM2N1cyNHEwUHNGNmpnSkx1Qm5mSll5Yk1UbDIyLUJNOU9PczBWdGdPMHhwN25JdW1TN2pDWVp6NmJENnpRVGNTZjhRbHNNOVlFbkZ3NEpOeFlzcU04VlM2Q3REVTNnODdKaGtOY2LSAXRBVV95cUxQbVhmLUNJSllqQjdyVFhNMFFvMFVSbkttNF9uUUp6WkhnZFFSMERnVDlvNnJDVTdid1BlRFFDVDI2NDFvM19TcXAzSUxGdUNCODY0WUZOak9NVGdiUTlIQkcxSEhHUmJmNkVpNzhKX01Ta0FRbw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">우리은행, 방한 외국인 핀테크 서비스 강화…디지털 지갑 하반기 출시 - 우먼타임스</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이번 협약은 전세사기 피해자의 신속한 일상 회복을 지원하는 한편 청년층을 중심으로 예방 활동을 강화해 전세사기 피해를 사전에 방지하기 위한 것이다. 또 전세사기 예방 콘텐츠 제작과 찾아가는 상담·교육 프로그램 운영 등을 통해 청년층의 전세사기 대응 역량을 높이는 데에도 협력할 예정이다. 회원가입 후 이용바랍니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 05:10:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">우먼타임스 = 성민 기자 우리은행이 방한 외국인이 국내 앱을 간편하게 쓸 수 있는 디지털 지갑 개발에 나선다. 우리은행은 지난 10일 핀테크 스타트업 크로스허브와 '방한 외국인 결제 편의성 개선 및 공동 서비스 개발'을 위한 업무협약을 체결했다고 11일 밝혔다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 00:27:45 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="Digital">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:29</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 0</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE00ZjRzR1F5MEFpeVhGTVcxWjJzQjRkUG5ONDhDM2IzM2dxTWo1NlZkTjhrREdtamJxb3cwaVQ1TkxHUE1OUWNCSGRQTmN5WW9aUmJXOEh6TmJrdTBQYW13aXhoa3hyUW1n0gFsQVVfeXFMT3l0SU5Tc3NRM2lUeHdKa1A4WkphTzhwOUdBRXlIQTNUU3hWTGVPYjlNMkxyRjdsREpFcXBweExXcEIxVW1uS09uNHd0TmF3bVh6V1U4Y3pHWTllYXFGbWFCTTlMMnV1Wl9jX0hv?oc=5" target="_blank" style="color:inherit;text-decoration:none;">흥국화재, 기업대출 3700억 줄었다…무게추는 개인대출로, 왜 - 블로터</a>
+              <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBNSzlzOXFreGsyVW9YQ2RKdmY0QWhKc0tHaENtd1ppd3dlVmdUb3RWTmlsLUhyRVh2bUpnNWYyV2ptQVVLUVg3SjFic2lTYTAybjk1YjhQQTk0MnlYSHAyY2s2T2ZudXBjOWlJ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">왜 디지털화폐인가…예금토큰·CBDC·스테이블코인 어떻게 다른가 - 라이센스뉴스</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">부동산업, 사업시설 및 사업지원서비스업 대출은 6299억원으로 전년(7677억원) 대비 감소했지만 여전히 전체 대출의 33.99%로 가장 높은 비중을 기록했다. 금융·보험업과 건설업 대출도 각각 2474억원, 2310억원으로 전년보다 감소했다. 제조업 대출은 102억원으로 전년보다 360억원가량 줄었다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 10 Jun 2026 07:31:15 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">금융권에서는 원화 스테이블코인이 상용화될 경우 국내 결제 시스템과 해외 송금, 전자상거래 시장에 큰 변화를 가져올 것으로 보고 있다. 디지털 결제와 송금, 해외 거래 영역에서 스테이블코인의 활용 가능성이 높기 때문이다. 기존 은행 계좌 중심의 결제 시스템이 디지털 지갑 중심으로 변화할 가능성이 있으며 해외 송금 비용 절감과 실시간 결제 구현도 가능해질 수 있다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 11 Jun 2026 22:00:00 GMT</p>
           </div>
         </div>
       </div>
