@@ -62,11 +62,11 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
     
         <div class="sidebar-item" id="tab-AI" onclick="filterTag('AI', this); closeSidebar();">
           <span style="width:8px;height:8px;border-radius:50%;background:#FFD166;flex-shrink:0;display:inline-block;"></span> ai
-          <span style="margin-left:auto;background:#FFD166;color:#5C3A00;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">7</span>
+          <span style="margin-left:auto;background:#FFD166;color:#5C3A00;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">6</span>
         </div>
         <div class="sidebar-item" id="tab-Digital" onclick="filterTag('Digital', this); closeSidebar();">
           <span style="width:8px;height:8px;border-radius:50%;background:#C68642;flex-shrink:0;display:inline-block;"></span> digital
-          <span style="margin-left:auto;background:#C68642;color:#ffffff;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">2</span>
+          <span style="margin-left:auto;background:#C68642;color:#ffffff;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;">3</span>
         </div>
         <div class="sidebar-item" id="tab-Fintech" onclick="filterTag('Fintech', this); closeSidebar();">
           <span style="width:8px;height:8px;border-radius:50%;background:#FFBFA0;flex-shrink:0;display:inline-block;"></span> fintech
@@ -83,11 +83,11 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">전체</p>
         </div>
         <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('AI', document.getElementById('tab-AI')); closeSidebar();">
-          <p style="font-size:18px;font-weight:500;margin:0;color:#FFD166;">7</p>
+          <p style="font-size:18px;font-weight:500;margin:0;color:#FFD166;">6</p>
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">AI</p>
         </div>
         <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('Digital', document.getElementById('tab-Digital')); closeSidebar();">
-          <p style="font-size:18px;font-weight:500;margin:0;color:#C68642;">2</p>
+          <p style="font-size:18px;font-weight:500;margin:0;color:#C68642;">3</p>
           <p style="font-size:10px;color:#FFD9BC;margin:2px 0 0;">Digital</p>
         </div>
         <div class="stat-card" style="background:rgba(255,255,255,0.15);border:0.5px solid rgba(255,255,255,0.25);" onclick="filterTag('Fintech', document.getElementById('tab-Fintech')); closeSidebar();">
@@ -100,14 +100,14 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
       
         <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
           <span style="font-size:11px;color:#FFD9BC;">AI</span>
-          <span style="font-size:11px;color:#fff;font-weight:500;">23%</span>
+          <span style="font-size:11px;color:#fff;font-weight:500;">20%</span>
         </div>
-        <div class="stat-bar-bg"><div class="stat-bar" style="width:23%;background:#FFD166;"></div></div>
+        <div class="stat-bar-bg"><div class="stat-bar" style="width:20%;background:#FFD166;"></div></div>
         <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
           <span style="font-size:11px;color:#FFD9BC;">Digital</span>
-          <span style="font-size:11px;color:#fff;font-weight:500;">7%</span>
+          <span style="font-size:11px;color:#fff;font-weight:500;">10%</span>
         </div>
-        <div class="stat-bar-bg"><div class="stat-bar" style="width:7%;background:#C68642;"></div></div>
+        <div class="stat-bar-bg"><div class="stat-bar" style="width:10%;background:#C68642;"></div></div>
         <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
           <span style="font-size:11px;color:#FFD9BC;">Fintech</span>
           <span style="font-size:11px;color:#fff;font-weight:500;">70%</span>
@@ -132,21 +132,57 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
   </div>
   <div id="news-list" style="flex:1;overflow-y:auto;">
     
+      <div class="news-row" data-tag="Digital">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:00</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
+              <span style="font-size:11px;color:#888;">⭐ 10</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mcFg5MFd2a2lRcjBxX2lMbGQwSkJLNVFrOUotSHNZUDJNZTRNTDNYUzZyXzFuRjdjVUxDQkxaQzlSWjJ0ZFhJS3oyU1NQYWMwbG9qOVJkdWw3amJoZXVTUWplbHROYncx0gFsQVVfeXFMTU1EeFBZYUh4QkZrZGJmWEgzS2dCdTA4WjNyR0Fzc2cyaWJ5aTBRRUxDc0YxUVNIcklLVnhpR1JXMWRaT0lDbzd4dU9RelhzcFVJT1c1a0FxU1VtY2hGczBqUEd6S0p0SGJnaEVD?oc=5" target="_blank" style="color:inherit;text-decoration:none;">KDB생명 품은 한국투자금융…두 번의 예측 깬 '이변' - 블로터</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울 여의도 한국투자증권 본사 전경 /사진=한국투자증권 KDB생명 인수전에서 한국투자금융지주가 두 번의 예상을 뒤집었다. 당초 삼성생명과 흥국생명의 2파전이 유력하다는 관측을 깨고 본입찰에 뛰어든 데 이어, 한화생명·흥국생명과 경쟁 끝에 우선협상대상자까지 차지했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 09:17:23 GMT</p>
+          </div>
+        </div>
+      </div>
       <div class="news-row" data-tag="AI">
         <div style="display:flex;gap:10px;">
           <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:00</span>
+              <span style="font-size:11px;color:#888;">오전 9:01</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
               <span style="font-size:11px;color:#888;">⭐ 8</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TcXZGbmxzYldETElna1lpS1VqbjVXNjFyUEliekhFMkJXMkZYWWQyVXBWNnBXMWNPeUtDTktsenNiUy1ISkJsOGp2RTBEMUJROEJldDZUQ3R0cE9DM01CVQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">바레인, 오는 10월 개최되는 핀테크 포워드 2026 준비에 나서 - 뉴시스</a>
+              <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5KcDRWbjR0MzNQTlBhLUE2LVA5c3JzMmhETW5nWEgxNU1GRll3YXk3MW1SeXBjb1NvOTFmWlFtaDdFc1JmS1NCdENySFZZdG81M3N6U1VvMmZBV21rLXdMajVrOGpZVkdLbi1SaWhoMFVWRGhIZGNOT1BITlc?oc=5" target="_blank" style="color:inherit;text-decoration:none;">이혜민·박홍민 핀다 공동대표, 상반기 플랫폼 역할 확장…AI 시대 새 금융사 목표 [핀테크 하반기 승부수 ②] - 한국금융신문</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">마나마, 바레인, 2026년 8월 12일 /PRNewswire/ -- 지역을 대표하는 금융서비스 포럼인 핀테크 포워드(Fintech Forward)가 2026년 10월 7일부터 8일까지 바레인의 엑시비션 월드 바레인(Exhibition World Bahrain)에서 개최될 예정이다. 바레인 경제개발위원회(Bahrain Economic Development Board, Bahrain EDB)가 주최하고 포브스 미들이스트(Forbes Middle East)가 프로그램을 기획하는 핀테크 포워드 2026(FF26)은 글로벌 사상가와 선도적인 금융 혁신가, 정책 결정자들을 한자리에 모아 앞으로 놓인 가장 시급한 생태계 과제들과, 바레인과 더 넓은 지역, 그리고 그 너머에서 금융서비스 산업의 다음 성장 단계를 이끌어갈 높은 잠재력의 투자 기회를 함께 모색한다. 바레인 EDB에 대한 자세한 정보는 www.bahrainedb.com에서 확인할 수 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 11:11:08 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">대출 라인업 확대…한도조회 260만건 기록 하반기에는 저축은행 인수 절차를 안정적으로 마무리하고 심사와 운영 전 과정을 인공지능(AI) 중심으로 재설계한 'AI 네이티브 뱅크' 기반을 구축한다는 구상이다.13일 핀다에 따르면, 지난달 기준 누적 중개 대출 규모는 15조원을 넘어섰다. AI 네이티브 뱅크는 전 과정을 AI 중심으로 재설계하는 것이 목적이다.핀다 관계자는 &quot;기존 금융회사는 사람이 프로세스를 설계하고 AI가 일부 업무를 돕는 구조라면, 핀다는 고객 상담부터 심사, 운영, 리스크 관리까지 전 과정을 AI 중심으로 다시 설계하는 것을 목표로 한다&quot;며 &quot;여신 심사도 단순히 신용점수를 더 정교하게 계산하는 것이 아니라 고객의 다양한 금융 데이터를 종합적으로 이해하는 방향으로 발전하게 될 것&quot;이라고 말했다.AI 네이티브 뱅크 추진과 함께 포용금융에도 집중할 방침이다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 08:30:21 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="AI">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:02</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
+              <span style="font-size:11px;color:#888;">⭐ 8</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFAxZ3Y1bE5RMlJNNlJZLTBYWFhqd3M4Z2xlZjF5WXRZV19XOG42blJLZVBPZl95elc5a0l0NW9pdzJqaFdKcjFiUlYwcU1HdWJTTkUxWC1pNA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">[AI서머리] 1조 원 규모 ‘LP성장펀드’ 출범‧제2서울핀테크랩, 마젤란기술투자와 맞손 - 스타트업레시피</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">공급망 오케스트레이션 기업 키넥시스(토론토증권거래소: KXS)는 인도 광학·디지털 솔루션 기업 STL이 글로벌 사업 전반의 공급망 계획 역량 강화와 의사결정 속도 향상을 위해 ‘키넥시스 플래닝 원’을 선정했다고 밝혔다. 중기부, 1조 원 규모 ‘LP성장펀드’ 출범 엠크릿, 홈페이지 제작 과금 방식 개편… 초기 제작비 없앤다</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 08:10:35 GMT</p>
           </div>
         </div>
       </div>
@@ -156,7 +192,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:01</span>
+              <span style="font-size:11px;color:#888;">오전 9:03</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 8</span>
             </div>
@@ -174,7 +210,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:02</span>
+              <span style="font-size:11px;color:#888;">오전 9:04</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 7</span>
             </div>
@@ -192,48 +228,12 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:03</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 7</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GVXJjX2dlVmVhR0JIMm1ueGRpdDJNZFlVUjU5Ml9lOXVteERKMm4zT25KNDlCYVRHUVAyX19YZDFSS1lYVmtwa1NtTVJKZHV3NDd1SGdTYnV6MlZxeHFvOWNsRmM?oc=5" target="_blank" style="color:inherit;text-decoration:none;">서울시, ‘데모데이에서 투자유치·TIPS까지’ 다음 핀테크 성장기업 찾는다 - 매일일보</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">우수기업 5개사에 사업화지원금·IBK 기술실증·R&D·네이버클라우드 크레딧 등 후속 지원 ‘데모데이’는 유망 핀테크 기업이 국내외 투자자에게 기술력과 사업모델을 직접 소개하고 투자·사업화 기회를 모색하는 서울핀테크위크의 핵심 프로그램이다. 서울시는 사전평가를 통해 18개 기업을 선발하고, 자사의 핵심 서비스와 기술을 투자자에게 직접 소개할 기회를 제공해 투자유치와 해외진출, 기술실증(PoC) 등 후속 성장을 지원할 예정이다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 06:09:07 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:04</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 7</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQazV3M3RGRDM5LS1BU0FxUEtQQ0ZqWldXV1FrNGZMOEN5akVqcnpSZGFOeHppdlRFVjA0NkJJaHhTN0JHS21GYVFOOHFNdVNKV3BUd01lRUdiZE5BMThEN1BJbDFVam8?oc=5" target="_blank" style="color:inherit;text-decoration:none;">''데모데이에서 투자유치·TIPS까지''…서울시, 다음 핀테크 성장기업 찾는다 - 경인신문</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울시가 올해도 투자와 사업화의 다음 기회를 잡을 유망 핀테크 기업을 찾는다. ‘서울핀테크위크 데모데이 with IBK기업은행’은 12개사, ‘서울핀테크위크 데모데이 with 네이버클라우드’는 6개사를 선발한다. ‘서울핀테크위크 데모데이 with IBK기업은행’은 창업 7년 이내 핀테크 분야 스타트업, ‘서울핀테크위크 데모데이 with 네이버클라우드’는 창업 3년 이내의 핀테크 분야 스타트업을 대상으로 모집한다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 08:15:36 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:05</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 7</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1laThXeVdabWZXc3F3SlRCakd6bmgwSFEteS1rT3dPZWRma3k5d0I3NVlZMm03cG1mUjgwQldvclRsdHYwQXpKUWpxSDdiaS1jWC1qQXVEOVh1dFFTWVhBaW13RzlETkY3STdjLXZoMNIBb0FVX3lxTE1laThXeVdabWZXc3F3SlRCakd6bmgwSFEteS1rT3dPZWRma3k5d0I3NVlZMm03cG1mUjgwQldvclRsdHYwQXpKUWpxSDdiaS1jWC1qQXVEOVh1dFFTWVhBaW13RzlETkY3STdjLXZoMA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">데모데이에서 투자유치·TIPS까지…서울시, 핀테크 성장기업 찾는다 - 머니투데이 - 머니투데이</a>
+              <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE93dlhILTBaUkR6S0xHZ3RUTV9lSXl6N1dDaF8yblhUaFA4dGpKRl9RSkdFNGJYb2hyeW9fX3NDMzRmcEJSRHNMa2xsaHZxQXBhWEtwZ3BxM2hfbnFrcmVwNHlNeWgzVnJtb3fSAW9BVV95cUxNZWk4V3lXWm1mV3Nxd0pUQmpHem5oMEhRLXkta093T2VkZmt5OXdCNzVZWTJtN3BtZlI4MEJXb3JUbHR2MEF6SlFqcUg3YmktY1gtakF1RDlYdXRRU1lYQWltd0c5RE5GN0k3Yy12aDA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">데모데이에서 투자유치·TIPS까지…서울시, 핀테크 성장기업 찾는다 - 머니투데이 - 머니투데이</a>
             </p>
             <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울핀테크위크 데모데이는 유망 핀테크 기업을 대상으로 사전 IR 컨설팅과 투자자 대상 기업 피칭, 기업별 부스 운영 등을 지원한다. 올해 데모데이는 오는 10월 27일 진행된다. 서울시는 IBK기업은행과 12개사, 네이버클라우드와 6개사 등 총 18개 핀테크 기업을 선발·지원한다.</p>
             <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 02:15:00 GMT</p>
@@ -251,10 +251,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 6</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HbW9Oelh2Vzd1WTgyNDZZR0pjc2tYc1YxOHBlX0JCMFJpZVliekFiV24zOWJCVWRwdlRTZ2dYNWZuRXppMm93bE9WeDIxUQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">씨지인사이드, '2026년 서울형 R&D 핀테크 기술사업화 지원사업' 최종 선정 - 전자신문</a>
+              <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5pa1Bjenp6ZV9GV2ctVmhFSGlpT0o4RU1tOVF1a0dBVUR6TXBscjBhVXdBSmZoU1ZkLWwtYjRXVmdrejJrWU4tSHlUZURvNnhJVDhSOFpVdldXT0t3MThKenJWSF8ta3FRaWhKaHR1d0pCc1ZYaWJ5VTJscmY?oc=5" target="_blank" style="color:inherit;text-decoration:none;">김태훈 뱅크샐러드 대표, 수익 다각화 진행 중…하반기 '금융 AI 에이전트' 집중 [핀테크 사업 승부수 ①] - 한국금융신문</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">컴플라이언스 인공지능(AI) 전문기업 씨지인사이드(대표 박선춘)는 서울경제진흥원(SBA)이 추진하는 2026년도 서울형 R&D 지원사업 '핀테크 기술사업화 지원사업'에 최종 선정됐다고 밝혔다. 씨지인사이드는 지난해 IBK기업은행과 PoC를 성공적으로 완료하며 금융기관 내규와 외부 법령 간 영향도 분석 실무 적용 가능성을 확인했다. 박선춘 씨지인사이드 대표는 “금융기관의 컴플라이언스 업무는 정확성, 설명 가능성, 보안성이 모두 중요한 고난도 영역”이라며 “지난해 IBK기업은행 PoC를 통해 확인한 실무 적용 가능성을 바탕으로, 올해 글로벌 금융회사와 진행 중인 2차 PoC에서는 책임구조도 대응까지 범위를 확장하고 있다”고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 06:40:18 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">신규 대출 중개 넘어…데이터 공급으로 수익원 다각화 자료=뱅크샐러드, 생성형 AI 제작 김태훈 뱅크샐러드 대표, 수익 다각화 진행 중…하반기 '금융 AI 에이전트' 집중 [핀테크 사업 승부수 ①] 이미지 확대보기 [한국금융신문 옥준석 기자]뱅크샐러드 대표가 대출 중개 수수료에 기대던 수익 구조를 데이터 기반 관리형 서비스로 넓힌다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 08:26:41 GMT</p>
           </div>
         </div>
       </div>
@@ -269,10 +269,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 6</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQd1VTNzA5Z0RseXJXOWp4OFBHUGJ3UEtVV256cjhuYkx0MlRZYjFNZVhjSDlXbG92aE5vWW9GZk81RWJuNTA0dVZ1MF9vY2JfczZNWWstdG5iMlVvYXNkVE9YZWc4ZVdyUFFERml6dThWTXA4cWoyY1lxNkpZdHo1Z3c1SlNfWUZFLUZubjg2Nnd0cUl2VE5PMkJ1eG5DN1RRelhaS2RGcUZnRjFzNGxNZ0VkYkZNeS1fdlJndDRCUDFIRUpiU2lEUWJjLVY4Q3VL?oc=5" target="_blank" style="color:inherit;text-decoration:none;">영국-베트남 인공지능, 핀테크, 상품 파생상품 시장 및 물류 정상회의 - Vietnam.vn</a>
+              <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HbW9Oelh2Vzd1WTgyNDZZR0pjc2tYc1YxOHBlX0JCMFJpZVliekFiV24zOWJCVWRwdlRTZ2dYNWZuRXppMm93bE9WeDIxUQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">씨지인사이드, '2026년 서울형 R&D 핀테크 기술사업화 지원사업' 최종 선정 - 전자신문</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">영국 측에서는 마틴 켄트 영국 정부 아시아태평양 무역대표부 대표, 이언 프루 주베트남 영국 대사, 알렉산드라 스미스 주호치민 영국 총영사, 그리고 영국 유수 기술 기업 10곳의 대표들이 참석했습니다. 이번 회의 환영사에서 이언 프루 주베트남 영국 대사는 베트남과 영국 양국 관계가 포괄적 전략적 동반자 관계로 격상된 만큼 양국 협력 강화의 중요성을 강조했습니다. 이번 학술대회에서 산업통상부 청년연합 소속의 응우옌 응옥 탐 석사, 응우옌 꾸옥 칸 박사, 찐 꾸옥 빈 박사를 비롯한 연구팀은 &quot;산업통상 부문 노동 생산성 향상을 위한 AI 및 신기술 적용&quot;이라는 제목의 논문을 발표했습니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 16:28:20 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">컴플라이언스 인공지능(AI) 전문기업 씨지인사이드(대표 박선춘)는 서울경제진흥원(SBA)이 추진하는 2026년도 서울형 R&D 지원사업 '핀테크 기술사업화 지원사업'에 최종 선정됐다고 밝혔다. 씨지인사이드는 지난해 IBK기업은행과 PoC를 성공적으로 완료하며 금융기관 내규와 외부 법령 간 영향도 분석 실무 적용 가능성을 확인했다. 박선춘 씨지인사이드 대표는 “금융기관의 컴플라이언스 업무는 정확성, 설명 가능성, 보안성이 모두 중요한 고난도 영역”이라며 “지난해 IBK기업은행 PoC를 통해 확인한 실무 적용 가능성을 바탕으로, 올해 글로벌 금융회사와 진행 중인 2차 PoC에서는 책임구조도 대응까지 범위를 확장하고 있다”고 말했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 06:40:18 GMT</p>
           </div>
         </div>
       </div>
@@ -287,136 +287,64 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 5</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1GMGxIWl9lR0NJRV9sUnNqc3BENTJKLV9ydVZnc1NwZ0prY1d5Z3R4VTFMdXV5dUlFaEprN2g3eDNENzZRbDE0R2lOVGViVlVERTVDY3VrckhubzNOWnUwNGtGblNZVERnaXVENQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">삼성전자, '삼성 월렛'에 올해 스테이블코인 탑재 확정…&quot;계좌·해외 송금·매장 결제까지&quot; - 프라임경제</a>
+              <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE0wYzV4YllFbnNPLXZNVDBqQnJCUEczQVNOX3ExN2RQdGVKM3ZESmdLY2VXSVp4YjR0dUtKZ0ZFUXBpN2gyUHEzWG12endnYml5TThoOU9RaGxMQkHSAWBBVV95cUxQS0NuOTBmLWJTRXJWM0tOcTkzR2Y3aTBVSXphNEYtXzNhWTBrZ2dQa3YwV2R3Y3VENnNJeEhDOHpFSVp6WTJIcjQwQWZmTTgxVk05N0dJcmlmTU1KTkhzSjI?oc=5" target="_blank" style="color:inherit;text-decoration:none;">서울시, '서울핀테크위크 2026 데모데이' 18개 참가 기업 모집 - 연합뉴스</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">일부 국가 우선 시행…애플·샤오미 넘어 글로벌 핀테크 주도권 '완벽 확보' 가상자산 및 디지털 자산 시장을 전문 매체인 샌드마크(Sandmark)는 현지 시간으로 9일 삼성전자로부터 받은 서면 답변을 발표하며 &quot;삼성전자가 올해 일부 국가를 시작으로 삼성 월렛에 스테이블코인 계좌 개설, 국경 간 해외 송금, 매장 현장 결제 기능을 순차적으로 추가한다&quot;고 보도했다. 삼성전자 관계자는 &quot;올해 일부 국가를 시작으로 삼성 월렛 내에서 스테이블코인 계좌 개설, 해외 송금 및 결제 기능을 순차적으로 도입할 것&quot;이라며 &quot;각국의 규정과 시장 환경을 면밀히 검토한 후 적절한 시기에 글로벌 서비스 확대를 추진한다&quot;고 전했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 01:59:17 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울시는 IBK기업은행, 네이버클라우드와 손잡고 '서울핀테크위크 2026 데모데이' 참가 기업 18개를 이달 30일까지 모집한다고 10일 밝혔다. 올해 데모데이는 27일 콘래드 서울에서 개최되며 시는 행사에 참가할 18개 핀테크 기업을 선발한다. 데모데이 심사에서 선정된 5개 우수기업은 서울핀테크랩 입주 기회와 사업화 지원금 1천만원 등이 지원된다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 02:15:02 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="Fintech">
+      <div class="news-row" data-tag="Digital">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:09</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
               <span style="font-size:11px;color:#888;">⭐ 5</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WUWNlY2h5MkpZWE51eG1zRHhOWlQ5cm4tNlFnU1ZHU3ZqMXUxWjJnUUpHVm9rdlE1LWtBVXdIZE4teHB0MXhLRF9MZFNGdUU?oc=5" target="_blank" style="color:inherit;text-decoration:none;">서울시, ‘서울핀테크위크 2026 데모데이’ 참가기업 18개사 모집(~8월30일) - wowtale.net</a>
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zYnliMEw0NjFaRHN0MXpYeU9SaC1YLXh3UWdmUVpuTjdNcTY3MDQ0QVdhbTN1aEpjay0xbUpuUTBRWG5XWXdYMV95Z291bjJlOW1ueFllVlpnTGFmeGhMUzJHaElpZElP0gFsQVVfeXFMT1hfQlRpcXRGajNyNDYzMFdSX3N2SGg4Y1hxZ2pEWXZWZFE0Qm85dGpVZnE2cFIzSEJZVUtBQm45QkwzRXhaWkF2TWpHVjNJeUhCY2dIMHJ1UHVWSUwxaUUzc2dCaW80VF9xcDB6?oc=5" target="_blank" style="color:inherit;text-decoration:none;">삼성생명, 자본 129조 기반 해외 M&A…좌표는 아시아·미국 - 블로터</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">‘서울핀테크위크 데모데이 with IBK기업은행’은 창업 7년 이내 핀테크 분야 스타트업, ‘서울핀테크위크 데모데이 with 네이버클라우드’는 창업 3년 이내의 핀테크 분야 스타트업을 대상으로 모집한다. ‘서울핀테크위크 데모데이 with IBK기업은행’은 창업 7년 이내 핀테크 분야 스타트업, ‘서울핀테크위크 데모데이 with 네이버클라우드’는 창업 3년 이내의 핀테크 분야 스타트업을 대상으로 모집한다. 지난 2020년부터 진행된 ‘서울핀테크위크 데모데이’는 유망 핀테크 기업을 대상으로</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Tue, 11 Aug 2026 01:18:50 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">국내 생명보험 시장의 성장 한계를 극복하기 위해 기존 해외 사업을 확대하는 동시에 아시아 신흥시장과 미국 등 선진시장까지 M&A 대상 지역을 넓힌다. 상반기 투자손익은 1조8580억원을 기록했다. 이어 주주환원을 점진적으로 확대하는 동시에 잉여자본을 활용한 M&A와 신사업 확대를 전략적으로 추진할 계획이라고 설명했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 07:41:28 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="AI">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:10</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1taFdVaDhDZy1vdF9qWElybGRHNzl3RjZXOXJxcVZfYVE4NDA5VkpybTZqVXZJcnFVQzVGaEVndHN4WDVPa2ZFbGhrbnZveVV2cXJRT0lDRTJmZXF4ejk3dnhoV21ONzVl?oc=5" target="_blank" style="color:inherit;text-decoration:none;">'매경 핀테크 어워드 2026'…대상에 '한국딥러닝' - 매일경제TV</a>
+              <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XY0J3Wm1YQ2dnY3RMVnpsWVFUZG9QUmIzaWNCWEIwcHJRdXJzNElyMmNJd1J3djhTLUZfX216alpQdjV2TDliZXNhQkpDcm50Ni1la0pETUdxVDFfYWFj?oc=5" target="_blank" style="color:inherit;text-decoration:none;">제2서울핀테크랩, 핀테크혁신펀드 운용사 마젤란기술투자와 업무협약 체결 - 뉴스와이어</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">금융산업의 혁신을 이끌 핀테크 기업을 선정하는 '매경 핀테크 어워드 2026' 시상식이 오늘(12일) 서울 중구 매경미디어센터에서 열렸습니다. 대상인 금융위원장상은 문서 AI 기술로 금융 업무 자동화를 구현한 한국딥러닝이 받았습니다. 최우수상에는 AI 보안 기술을 개발한 티냅스와 비아파트 관리비를 금융 데이터로 전환한 한국주택정보가 선정됐고, 우수상은 퍼스트밸류와 메타크라우드, 씨지인사이드가 각각 수상했습니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 05:35:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 04:45:00 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="AI">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFD166;display:flex;align-items:center;justify-content:center;font-size:11px;color:#5C3A00;font-weight:500;flex-shrink:0;">AI</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:11</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
-              <span style="font-size:11px;color:#888;">⭐ 4</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5OQXVZV0ZtWklaRzBFcmR0V2lyRDJlOUpNaHlDUnkyM3BEWE5XVGk0azZNYnowcHd6cnZuUDdqTHlBWklmenVBVGRkTWdhcU1Cb1E?oc=5" target="_blank" style="color:inherit;text-decoration:none;">&quot;AI와 금융 결합해 새로운 혁신 선보여&quot; - 매일경제 마켓</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">매경 핀테크 어워드 시상식 뒷줄 왼쪽부터 시계 방향으로 조용병 전국은행연합회 회장, 신진창 금융위원회 사무처장, 김병환 심사위원장(전 금융위원장), 위정환 매일경제 대표, 이세훈 금융감독원 수석부원장, 이동철 여신금융협회장, 우길수 한국핀테크산업협회 부회장, 송봉호 퍼스트밸류 대표, 김형진 메타크라우드 대표, 강민승 티냅스 대표, 김지현 한국딥러닝 대표, 이윤곤 한국주택정보 대표, 박선춘 씨지인사이드 대표. 김호영 기자</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 08:40:41 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:12</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1QW1YWkQzbE5NM1FlRGR6aUVzTUgxY21BMlZxX2hDVFRQVWVRbThLeVdDbV9GT2ppdmw2NlUzV0lJVkxIYmVkTmRJLW9ZcVUxd2wzODFfT2JrUEcyOW1aRXVHM2cwdHZU?oc=5" target="_blank" style="color:inherit;text-decoration:none;">핀테크 유니콘 '트래블월렛'의 경고등…'제2 티메프' 막으려 금융당국 칼 빼들었다 - 데일리팝</a>
+              <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBYdi14eUgySURmS2JrZXRMNTVjV1Vib2w1dWJ5U3VsMlRhbTBQekZkNHFmR3ljNVczSzFFZHFEVFlNbmkyZVZoaTQ3bEVPbGhlRFprMUNxVDQ2WmMwNGdZM3h3bXhpU3QtRTdfUGthSQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">“디지털 자산 시장 패권 잡는다”… 교보생명, 토스와 맞손 잡고 대변혁 예고 - 스마트경제</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">해외여행 필수품으로 자리 잡으며 급성장한 핀테크 플랫폼 ‘트래블월렛’이 금융당국의 경영지도기준을 충족하지 못해 공식 조치 요구를 받았다. '미상환잔액 대비 자기자본 비율' 미달…사업구조 개선 수술대 방한 외국인 전용 올인원 결제 플랫폼 '와우패스(WOWPASS)'를 운영하는 (주)오렌지스퀘어는 '자기자본' 및 '미상환잔액 대비 자기자본 비율' 기준을 충족하지 못해 자본금 증액 요구를 받았다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 02:34:00 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:13</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 4</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1LRk1OY3J3VzgzTkEyV3JMMnZnWUlQNGFucVdkc1B0SmFBa2VmRzlsY0t1OUFHWVNWNlVqODdNLVYwaU1UVXNkdWxLTXBHU0F0MlFPUnZYVEVqSjdiTXkzSTYwWmtLNFVEeW1z?oc=5" target="_blank" style="color:inherit;text-decoration:none;">IBK기업은행, '서울 핀테크 위크 데모데이' 참가 기업 모집 - news.bbsi.co.kr</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">IBK기업은행이 서울특별시, 서울핀테크랩과 공동으로 10월 27일 여의도 콘래드 서울에서 열리는 '2026 서울 핀테크 위크 데모데이' 참가 기업을 모집한다고 오늘 밝혔습니다. 이번 데모데이는 'AX 기반 디지털금융의 전환'을 주제로 열리는 '서울 핀테크 위크 2026'의 공식 프로그램으로, 우수한 핀테크 기업을 발굴해 투자유치와 사업 협력 기회를 제공하기 위해 마련됐습니다. 참여 대상은 창업 7년 이내의 서울 소재 핀테크 스타트업과 신사업 분야의 창업 10년 이내 기업이며, 신청은 오늘부터 오는 30일까지 스타트업 플러스 홈페이지에서 가능합니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 04:46:04 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:14</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 4</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBtRzFscjRuWjNLZUJ6eExYdERwR1k0OEg0bUJtTG1yM1NLb2cwUXd1RURZTmJoQUhhRGc4YnZzUUVGYzNFWm0xelJwTnpCemFzLTlNMFlzaEZDZEJFSmh2MHgtR2pVQ2lyc0JF?oc=5" target="_blank" style="color:inherit;text-decoration:none;">기업은행, 서울 핀테크 위크 데모데이 참가 희망기업 모집 - 파이낸셜신문</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울특별시·서울핀테크랩과 공동 개최…AX 기반 디지털금융 혁신기업 발굴 기업은행은 '2026 서울 핀테크 위크 데모데이 with IBK 기업은행'에 참가할 기업을 이달 30일까지 스타트업 플러스 홈페이지를 통해 모집한다고 10일 밝혔다. 기업은행 관계자는 &quot;이번 데모데이를 통해 우수한 AX 기반 핀테크 기업을 발굴하고 투자와 협업 기회를 확대해 나가겠다&quot;며 &quot;역량 있는 핀테크 기업들의 많은 관심과 참여를 바란다&quot;고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 08:25:27 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:15</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 4</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9PMDRUaFRxRkVDQ0ZqMTRhUTlDSXpfTUppbWVvWTR1SzQ1RVFhVHUzbm1hbXNnd0RHOENXMU02b1VrVGpnLS1yb1AzSnNpbXVrZVZPNEdmMm85a0tINWZ5emkzaHJrUXFjOTEzYnUyYVRkQdIBdkFVX3lxTE5xaUI4ZUtUWHQxRFUtUHR6aTZzUW5xRkxZRkoyeVNsb2ZLLXE0aGpGYkp0Z0V0RWZJOWFVcWxhcXpjVVJqTXh4T25aTWVyYjdHMDVMQy1ILU1jM3QyUmN6a3EwX0JBSUZVZ0ZULTVRXzRxOG1uWUE?oc=5" target="_blank" style="color:inherit;text-decoration:none;">IBK기업은행, '서울 핀테크 위크 데모데이' 참가기업 모집 - 포춘코리아</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이번 데모데이는 'AX 기반 디지털금융의 전환'을 주제로 열리는 '서울 핀테크 위크 2026'의 공식 프로그램이다. 참가 대상은 창업 7년 이내의 서울 소재 핀테크 스타트업과 '중소기업창업 지원법'상 신사업 분야 창업 10년 이내 기업이다. IBK기업은행 관계자는 &quot;이번 데모데이를 통해 우수한 AX 기반 핀테크 기업을 발굴하고 투자와 협업 기회를 확대해 나가겠다&quot;며 &quot;역량 있는 핀테크 기업들의 많은 관심과 참여를 바란다&quot;고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 07:03:22 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">박진호(왼쪽) 교보생명 부사장이 김규하 토스 부대표와 지난 7일 서울 종로구 교보생명 본사에서 협약 체결 후 기념 촬영을 하고 있다. [스마트경제 복현명 기자] 전통 금융의 명가 교보생명과 대한민국 대표 핀테크 공룡 토스가 손을 잡고 급변하는 디지털 자산 시장의 주도권을 확보하기 위해 전격적으로 연합전선을 구축했다. 안정성을 갖춘 기존 대형 보험사와 뛰어난 편의성으로 막강한 고객층을 확보한 핀테크 플랫폼이 만나면서 전통 금융과 신기술이 결합한 새로운 디지털 자산 생태계가 마침내 기지개를 켜고 있다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 00:30:00 GMT</p>
           </div>
         </div>
       </div>
@@ -426,7 +354,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:16</span>
+              <span style="font-size:11px;color:#888;">오전 9:12</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
@@ -444,15 +372,51 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:17</span>
+              <span style="font-size:11px;color:#888;">오전 9:13</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE93bGZrTHNvaU1fRUVZRDZwSGRqMzdLQUZVRV9DVmJlR0drUEt1Nkx5RFVyQ1JkaFBMVEhpM21BXy1USFhHRW5Lc2dHRDhKNW8?oc=5" target="_blank" style="color:inherit;text-decoration:none;">기업은행, 2026 서울 핀테크 위크 데모데이 참가기업 모집(~8월30일) - wowtale.net</a>
+              <a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE5EZHhlbUViVjFTdmJqV1FFcmxlcEp0YXh1cmRyR3NWLThPLWlNNnJWb3o4SlRHTTVrdzg3LUdEV2preWdJNmc?oc=5" target="_blank" style="color:inherit;text-decoration:none;">제2서울핀테크랩·마젤란기술투자, MOU 체결…핀테크 스타트업 투자 연계 강화 - beSUCCESS</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">IBK기업은행 은 서울특별시 , 서울핀테크랩 과 공동으로 10월 27일 여의도 콘래드 서울에서 개최 예정인 ‘2026 서울 핀테크 위크 데모데이 with IBK기업은행’에 참가할 기업을 이달 30일까지 모집 한다. 이번 데모데이는 ‘AX 기반 디지털금융의 전환’을 주제로 개최되는 ‘서울 핀테크 위크 2026’의 공식 프로그램으로, 우수한 AX 기반 핀테크 기업을 발굴하고 투자유치와 사업 협력 기회를 지원하기 위해 마련됐다. 심사를 통해 선발된 12개 핀테크 기업은 ‘IR 고도화 지원 프로그램’을 거친 후 본 행사인 데모데이에 참가한다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 05:44:09 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">beSUCCESS is a professional media company with a particular focus on startups and tech industry | beSUCCESS는 국내 기업의 해외 진출을 지원하는 미디어 회사로, 실리콘밸리를 포함한 전세계 테크 트렌드와 스타트업 뉴스, 기업가 정신 등 국내 스타트업의 인사이트 확대를 위해 필요한 외신 정보를 직·간접적으로 제공할 뿐만 아니라, 한국의 스타트업 생태계와 출시 소식 등 주요 뉴스를 영문으로 세계 각국에 제공해 한국 스타트업의 글로벌 성공을 지원하는 '연결'의 역할을 합니다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 08:16:44 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:14</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3Z2ZXdUJfRjV3ZFhxNXlLazdzM3ozbmxFRjViZ0ViNm0zMzFMTzZITzV0a3NwZURORXlSRll6U0psV1NpVUFUQmRBbFVyN1E0S1pxZF9KaU5HVzVWQzIwdGpjdEpiRzkz?oc=5" target="_blank" style="color:inherit;text-decoration:none;">기업은행, 서울 핀테크 위크 데모데이 참가기업 모집 - 환경일보</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">2026년 서울핀테크위크 데모데이 with IBK 기업은행 기업 모집 안내 /사진제공=IBK기업은행 [환경일보] IBK기업은행(은행장 장민영)은 서울특별시, 서울핀테크랩과 공동으로 10월 27일 여의도 콘래드 서울에서 개최 예정인 ‘2026 서울 핀테크 위크 데모데이 with IBK기업은행’에 참가할 기업을 모집한다고 밝혔다. 이번 데모데이는 ‘AX 기반 디지털금융의 전환’을 주제로 개최되는 ‘서울 핀테크 위크 2026’의 공식 프로그램으로, 우수한 AX 기반 핀테크 기업을 발굴하고 투자유치와 사업 협력 기회를 지원하기 위해 마련됐다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 07:31:48 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:15</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TY2lrTmRIOU01T3FUd1JwWlplOXpZS1NPU1FLZV9kN3E4MjEtVFI2NEVmUTZzVVdOVHU3WUJwTm1UUWl1NGtiMWdMeElYUDJqN0RRQmlLZV83TDNaYlZB?oc=5" target="_blank" style="color:inherit;text-decoration:none;">제2서울핀테크랩, 핀테크혁신펀드 운용사 마젤란기술투자와 업무협약 체결 - press.theleader.kr</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울--(뉴스와이어)--제2서울핀테크랩이 핀테크 스타트업의 투자 활성화와 창업 생태계 조성을 위해 마젤란기술투자와 업무협약(MOU)을 체결했다고 밝혔다. 마젤란기술투자는 한국성장금융이 조성하는 핀테크혁신펀드의 위탁운용사(GP)로 선정돼 핀테크 분야 초기 기업을 중심으로 전문적인 투자와 성장을 지원하고 있는 벤처캐피털이다. 양 기관은 이번 협약을 통해 △핀테크 분야 유망 스타트업 공동 발굴 및 투자 연계 △스타트업 대상 전문 멘토링 및 비즈니스 네트워크 지원 △글로벌 진출을 위한 투자 및 해외 진출 지원 △창업 생태계 활성화를 위한 공동 프로그램 운영 등 다양한 분야에서 협력을 추진할 예정이다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 04:45:00 GMT</p>
           </div>
         </div>
       </div>
@@ -462,15 +426,51 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:18</span>
+              <span style="font-size:11px;color:#888;">오전 9:16</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFF6D6;color:#5C3A00;">AI</span>
-              <span style="font-size:11px;color:#888;">⭐ 3</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1jVE5iU1E0RHlGb0VSZmFlVEZROHpfMmVqdXhLZXR4R0ZsTzhxQ2ozeXNFemFnV1pQd3ZQNHd3N3M0dUJpdVZfMW5vNHlvaEtmNlBJd2JJMlFCOUtvUjdFeHFuc3Q4aFFsSFNFMFdXX1HSAXRBVV95cUxQNmxrUW1JVzgwYlpwM2dTamM1TVRCaWFqajM2Wk9COTNRNENMcVBNWERuYkZfWmFGejBNcFFPSmhSYk02SV9wQUtKdjBsVTlwbW1nNFRWTU5HWkVZLXZsUWJRbFI3dzl6WUVpSHQyUnp5RC03YQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">카카오, ‘슈퍼월렛’ 꿈꾸지만… 디지털자산 생태계 구축 하세월 - IT조선</a>
+              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1taFdVaDhDZy1vdF9qWElybGRHNzl3RjZXOXJxcVZfYVE4NDA5VkpybTZqVXZJcnFVQzVGaEVndHN4WDVPa2ZFbGhrbnZveVV2cXJRT0lDRTJmZXF4ejk3dnhoV21ONzVl?oc=5" target="_blank" style="color:inherit;text-decoration:none;">'매경 핀테크 어워드 2026'…대상에 '한국딥러닝' - 매일경제TV</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">카카오가 스테이블코인을 위한 전문 인력 채용에 나서는 등 관련 인프라 구축에 속도를 내고 있다. 다만 ‘슈퍼월렛’ 구상을 실제 서비스로 구현하기까지는 가상자산거래소와 금융사 등을 아우르는 디지털자산 생태계 구축이 선행돼야 한다는 평가가 나온다. 챗GPT가 생성한 이미지.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Sun, 09 Aug 2026 21:10:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">금융산업의 혁신을 이끌 핀테크 기업을 선정하는 '매경 핀테크 어워드 2026' 시상식이 오늘(12일) 서울 중구 매경미디어센터에서 열렸습니다. 대상인 금융위원장상은 문서 AI 기술로 금융 업무 자동화를 구현한 한국딥러닝이 받았습니다. 최우수상에는 AI 보안 기술을 개발한 티냅스와 비아파트 관리비를 금융 데이터로 전환한 한국주택정보가 선정됐고, 우수상은 퍼스트밸류와 메타크라우드, 씨지인사이드가 각각 수상했습니다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 05:35:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:17</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 4</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBSbDREcjR3V0d4MFJEdHlEQ0tmRE9EOUhPU25fRktxNnY2dm1kM1lHTEVHWk95LTJFTDhCdEV1VFJMT1FvY2JKN3ZjbTlSa0g3XzVOR1RTLU9naWt5YVg0ZA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">IBK기업은행, '서울 핀테크 위크 데모데이' 참가기업 모집 - 아시아경제</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이번 데모데이는 오는 10월 27일 서울 여의도 콘래드 서울에서 열리는 '서울 핀테크 위크 2026'의 공식 프로그램이다. '서울핀테크혁신상' 수상 기업은 사업화 지원금 1000만원과 서울핀테크랩 입주 기회를 받는다. 기업은행 관계자는 &quot;이번 데모데이를 통해 우수한 AX 기반 핀테크 기업을 발굴하고 투자와 협업 기회를 확대해 나가겠다&quot;며 &quot;역량 있는 핀테크 기업들의 많은 관심과 참여를 바란다&quot;고 말했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 04:34:36 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:18</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 2</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBLWnpqZU1ydmZCeXZjNG5la2RneENaWDR1TC1Ba2sxYVVkTGQ3RVBSd0Z3MmJ5RnlUbDNMNUJ2bEtEcUk4X0k3c3AwRFlfdXRkWGstNUdla0FyclJmX1Zz?oc=5" target="_blank" style="color:inherit;text-decoration:none;">바레인, 오는 10월 개최되는 핀테크 포워드 2026 준비에 나서 - 뉴스1</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">(기사 요약 거부) 원문을 직접 확인해주세요.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 09:51:00 GMT</p>
           </div>
         </div>
       </div>
@@ -488,7 +488,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxaGcxRjlmQ1BQZnZ5UmtJTldXQXJUYUZUVGppOUx5YVFHZ1JjR3pZTlpfOGR4THd4amJaTTg5UkdBM1Z4djRKQXhGSE9QRHM?oc=5" target="_blank" style="color:inherit;text-decoration:none;">&quot;아기 통장 어쩌나...일단은 안심&quot;...금융위, 스크래핑 차단 대응 논의 - v.daum.net</a>
             </p>
             <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">핀테크·은행 업계가 대법원의 스크래핑 한시적 유예 조치에 안도했다. 또한 스크래핑 차단 시 주택구입 및 전세자금 지원이 지연되는 등 서민·취약계층의 정책금융 이용에도 애로가 있을 것으로 확인됐다. A은행 관계자는 &quot;갑작스러운 스크래핑 차단은 고객 불편으로 이어질 수 있어, 기관의 API 개발 및 사전협의를 위한 준비 기간을 충분히 둘 필요 있었다&quot;면서 &quot;스크래핑을 안전하게 활용하면서도 고객 편의를 극대화하기 위한 논의가 지속 필요할 것으로 보인다&quot;고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 07:04:00 GMT</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 07:04:44 GMT</p>
           </div>
         </div>
       </div>
@@ -503,10 +503,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Ta3VPR003OERqOHhyRXhESHdFY0x6dk1kaWIwcnFSV0c2cDhVUF9seWVmeXpkLXQ1MEtrSFV0WHNFWmhiU3JPdFUyT0U4X29GdmpJ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금융혁신 이끄는 기업들…'매경 핀테크 어워드 2026' 성료 - 네이트</a>
+              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uOGxxMjFnZ3VkOVgxd0I3aDhZSUlIOE5XWmZ0dUIxWVJPaGVTVVlTQnRZUE1LUnZRQnlkZzktc3VMTmNIUU1CMjc2bVdjTFE?oc=5" target="_blank" style="color:inherit;text-decoration:none;">크로스이엔에프, 이동의즐거움과 파트너십…외국인 대중교통 결제 편의 강화 - 바이라인네트워크</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">기사 제목과 본문 내용을 자동 요약한 내용입니다. 전체 내용을 이해하기 위해서는 기사 본문 전체를 확인하는 것이 더 좋습니다. 지원하지 않는 브라우저로 접근하셨습니다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 11:04:05 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">핀테크 스타트업 크로스이엔에프는 이동의즐거움과 이주 외국인의 대중교통 이용 환경 개선을 위한 파트너십을 체결했다고 13일 밝혔다. 크로스이엔에프는 K-패스 모두의카드 혜택을 적용한 ‘이즐카드’와 모바일 앱 기반 교통카드 서비스를 제공하는 모빌리티 핀테크 기업 이동의즐거움과 함께 이주 외국인이 일상에서 겪는 대중교통 결제 불편 해소에 나선다. 양사는 내국인과 동일한 수준의 편리한 이동 환경을 조성하는 데 협력할 계획이다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 02:28:42 GMT</p>
           </div>
         </div>
       </div>
@@ -521,10 +521,10 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE9BM3AtNmQyS18xY2ZNUkxQYkw0cWwydFRQUTVPdm42bmJQWDBndENWZGR0QUZFdzhBR0h0dzBIVHRSN28yRFlrQmdDU2hRU1hVRnAwZDYyREhiTHdNb3c?oc=5" target="_blank" style="color:inherit;text-decoration:none;">인앱 결제·B2C 넘어 B2B로… 네카오 핀테크 '고성장' - 아시아타임즈</a>
+              <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hSGRHdnAyWkx6ME5mb2RucWZfSDNUTmc0RVFwWG5mZEt1WVdvVG90bEFrUTNBYkprSXg0em1oSlNWZlFpcm1qMElyNkdhZ3ZfMEZqZTdYZmhPZw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">크로스이엔에프, 이주 외국인 교통 편의성 높인다 - 파이낸셜뉴스</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">이들 기업은 13일부터 관리종목으로 지정될 예정이다. 반면 주가가 1000원 아래였던 서한은 이번 관리종목 지정 대상에서 빠졌다. 관리종목 지정 이후 90거래일 이내에 주가가 45거래일 연속 1000원 이상을 유지하지 못하면 상장폐지 절차로 넘어간다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 06:03:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">크로스이엔에프 제공 [파이낸셜뉴스] 핀테크 스타트업 크로스이엔에프는 이동의즐거움과 손잡고 이주 외국인의 교통 편의성을 높인다. 크로스이엔에프는 이주 외국인이 일상에서 겪는 대중교통 결제 불편 해소에 나선다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 02:10:10 GMT</p>
           </div>
         </div>
       </div>
@@ -539,45 +539,9 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5KdlIweTk1Z3FycUdORFV0U2ZseEZ2UTdtbHBKSGV3Vl9rRXYtOTFCR3FXbTFVUElDb2dFWjNvQ3JhYkpmcE1PMVZsS19oaDA?oc=5" target="_blank" style="color:inherit;text-decoration:none;">금융위 'D-테스트베드' 하반기 모집⋯5년치 데이터 풀어 핀테크 지원 - v.daum.net</a>
+              <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPNDVDdG1GRTNGNTNQS3JaUDFDZXBFUE5sWDR3ZGVhYnR2M0xxd1RzS0tQWGpNT3Vfa2tEdGpzdC1wcjNFUlZiaFdOd3F1azVVbF9VcWFibVcyWVJfVTloUnIySy1VOXVXQWlnZFB2Uy00dEtXS3ducHIxQk5nR2dIZ19vS0lDMzRVY0MtbVB3?oc=5" target="_blank" style="color:inherit;text-decoration:none;">핀테크, 부산 부가가치 2위…후방산업도 키워라 - 국제신문</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">금융당국이 핀테크 스타트업과 예비 창업자의 기술 검증을 돕는 'D-테스트베드' 참여자를 모집한다. 금융위원회는 다음 달 8일까지 4주간 '2026년 D-테스트베드' 하반기 모집을 진행한다고 12일 밝혔다. D-테스트베드는 혁신적인 아이디어를 가진 핀테크 기업이나 개인이 금융권 실제 데이터와 분석 시스템을 활용해 사업성을 사전 검증할 수 있도록 지원하는 모의 시험장 제도다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Tue, 11 Aug 2026 21:02:09 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:23</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBxMjlHZzRiQnVYLWgtSTZ4bFdyQ08yUXBBTFFHQV9oakxRb2ZtWFZ4TE9FUU9uU1NWWGVBbkJQMUNSU0JNY3NlNklvLTRDUm5XTTVCV2NOT1FST2pSMEJjdE9uTGF6dWQ0SlMxaXpLTTJYLTg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">테크핀레이팅스-메인비즈협회, 기업신용평가 경쟁력 강화 협력 - 디지털투데이</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[디지털투데이 황치규 기자]더존비즈온 핀테크 전문 계열사 테크핀레이팅스는 한국경영혁신중소기업협회(메인비즈협회)와 기업신용평가 비용 부담 완화 및 경쟁력 제고를 위한 업무협약(MOU)을 체결했다고 11일 밝혔다. 양측은 ▲상호 교류·협력을 통한 공동 사업 발굴 및 확대 ▲메인비즈협회 회원사 전용 랜딩페이지 및 전담 창구 운영 ▲회원사 대상 기업신용평가등급확인서 수수료 우대 정책 시행 ▲회원사 대상 서비스 안내 및 공동 홍보 등 다방면에서 긴밀한 협력 체계를 구축할 방침이다. 테크핀레이팅스 옥형석 대표는 “이번 협약은 경영혁신을 도모하는 메인비즈협회 회원사들에게 테크핀레이팅스 신용평가 및 금융 지원 서비스를 선보이는 계기”라며 “앞으로도 긴밀한 협력을 바탕으로 중소기업 금융 접근성을 높이고 실효성 있는 지원 생태계를 선도해 나가겠다”고 말했다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Tue, 11 Aug 2026 00:48:18 GMT</p>
-          </div>
-        </div>
-      </div>
-      <div class="news-row" data-tag="Fintech">
-        <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
-          <div style="min-width:0;">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
-              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:24</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
-            </div>
-            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPNDVDdG1GRTNGNTNQS3JaUDFDZXBFUE5sWDR3ZGVhYnR2M0xxd1RzS0tQWGpNT3Vfa2tEdGpzdC1wcjNFUlZiaFdOd3F1azVVbF9VcWFibVcyWVJfVTloUnIySy1VOXVXQWlnZFB2Uy00dEtXS3ducHIxQk5nR2dIZ19vS0lDMzRVY0MtbVB3?oc=5" target="_blank" style="color:inherit;text-decoration:none;">핀테크, 부산 부가가치 2위…후방산업도 키워라 - kookje.co.kr</a>
-            </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">±è°æ·Ê À£´Ï½ºº´¿ø ¿Ü°ú ¿øÀå ¹«¸®ÇÑ ´ÙÀÌ¾îÆ® ´ã¼®Áõ ºÒ·¯¡¦º¹Åë ½ÉÇÏ¸é º¹°­°æ ÀýÁ¦¼ú 50´ë ³²¼º A ¾¾´Â °Ç°­°ËÁø¿¡¼­ º¹ºÎÃÊÀ½ÆÄ °Ë»ç¸¦ ¹ÞÀº µÚ ÀÇ»ç·ÎºÎÅÍ ¡°´ã¼®ÀÌ ÀÖ´Ù¡±´Â ¾ê±â¸¦ µé¾ú´Ù. ÀÌ¿¡ ´çÈ²ÇÑ ±×´Â ±×³É ³öµÖµµ ±¦ÂúÀº °ÍÀÎÁö ¹°¾ú´Ù. ÀÌ</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">7ÀÏ ¼¼È­º´¿ø¿¡ ÀÇÇÏ¸é ÃÖ±Ù 44¼¼ ¿©¼º A ¾¾°¡ ½ÃÇè°ü¾Æ±â ½Ã¼ú(I ¼¾ÅÒÁ¾ÇÕº´¿ø °£´ãÃé¿Ü°ú ¹Ú±¤¹Î ÀÇ¹«¿øÀå °í³­µµ ¡®°£¹®ºÎ ´ã°ü¾Ï¡¯ ¼ö¼ú¡¦³ôÀº ¼÷·Ãµµ¿Í ÇùÁø ÇÊ¼ö °£¹®ºÎ ´ã°ü¾Ï(Å¬¶óÃ÷Å² Á¾¾ç)Àº ÁÂ¿ì °£¿¡¼­ ³ª¿À´Â, ´ã°ü(´ãÁó ¹èÃâ °æ·Î)ÀÌ ÇÕÃÄÁö´Â ºÎÀ§ÀÎ ¡®°£¹®ºÎ(ÊÜÚ¦Ý»)¡¯¿¡ »ý±â´Â ¾Ç¼º Á¾¾çÀÌ´Ù. °­º´·É ±¤µµÇÑÀÇ¿ø ´ëÇ¥¿øÀå¡¤ÇÑÀÇÇÐ¹Ú»ç ÁÁÀº ÇÇºÎ, È­ÀåÇ° ¾Æ´Ñ ¸öºÎÅÍ ¹Ù²ã¶ó ¾Æ¹«¸® ³ªÀÌ°¡ µé¾îµµ ¸¶À½¸¸Àº Ã»ÃáÀÎµ¥, ¹®µæ °Å¿ïÀ» º¸¸é Ä¢Ä¢ÇÏ°í Çª¼®ÇÑ ¾ó±¼À» ¸¶ÁÖÇÏ°Ô µÈ´Ù.</p>
             <p style="font-size:11px;color:#aaa;margin:0;">Google · Mon, 10 Aug 2026 10:17:00 GMT</p>
           </div>
         </div>
@@ -588,7 +552,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:25</span>
+              <span style="font-size:11px;color:#888;">오전 9:23</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
@@ -606,7 +570,7 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
-              <span style="font-size:11px;color:#888;">오전 9:26</span>
+              <span style="font-size:11px;color:#888;">오전 9:24</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 2</span>
             </div>
@@ -618,6 +582,42 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
           </div>
         </div>
       </div>
+      <div class="news-row" data-tag="Digital">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:25</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
+              <span style="font-size:11px;color:#888;">⭐ 0</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5vNXdGQ0FCanRNWFNvc0lvTzVuNU50d1NvTG0xOExCM2tHZzZnUFBRbHpCS1B5MnRic1RaeC1HeEZqNGJoeFNOcnZabFc3Ym5fM2VyX2lpZWQ5YkJGWktjeEdtbDRpel9FS1Itd1F5RmJmZzJhV213a3NiWdIBgAFBVV95cUxOLXR4SXB2ZERmVkNlQXF3YjQzVWYydndZZkxlQ0I0MjVwWXV5MW02SXVLVkNJUGliUjZHZkxoeTlraVFMUXB5aF9ld2RDV0RudXM1R0hNc2x6QzdRZ1JabUZJdlVyT3lTaTdhUnBOT3hKdGNDLU9BbzlPeDRwckg1NQ?oc=5" target="_blank" style="color:inherit;text-decoration:none;">스크래핑 '급한 불' 껐지만 20일부터 사전협의 … 의존도 높은 네·카·토 '대응 분주' - 뉴데일리</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">법원이 가족관계등록시스템 스크래핑 제한을 한시 유예하면서 금융권은 당장의 서비스 차질 우려를 덜게 됐다. 스크래핑은 이용자의 동의를 받아 아이디(ID)와 공동인증서 등 인증정보를 활용해 공공기관 홈페이지에서 필요한 정보를 자동으로 가져오는 기술이다. 개인정보위는 장기적으로는 기업이 공공기관 홈페이지에 직접 접속해 정보를 가져오는 스크래핑 대신, 응용프로그램인터페이스(API) 방식으로 전환한다는 계획이다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 02:12:00 GMT</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-row" data-tag="Fintech">
+        <div style="display:flex;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
+          <div style="min-width:0;">
+            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
+              <span style="font-size:11px;color:#888;">오전 9:26</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
+              <span style="font-size:11px;color:#888;">⭐ 0</span>
+            </div>
+            <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
+              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9NanNkMG9Ub1RRMnV2aXhlc04wYUc5N2xRbllqb21jemtCdWhQM2xTdWxiVlY4NmVFdzlaQWo3NUtnd2dBZl8tRTdfdENwRklSR0twTmQ3d2JyZ3AyYW1tNkJxbHZHakVqSWVfMWM5YnjSAXRBVV95cUxOZW1lQnRFNEdmOWVKdzJmempqX1FmeHhNUTB5MmF1bXRyYURaZmpBaGNFa0JtODMxWkVadm9jcWQ4LUt1VUNhQ01SSFBfWkU3eThWWDZOT29hbXhNRkhRMlRZV1VYUk1RVWlvRG9CNWNOZ2NlXw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">가상자산 사업자 신고요건 강화… FIU “미충족시 말소” - IT조선</a>
+            </p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">대주주까지 범죄경력 심사 대상에 포함되고 재무건전성과 자금세탁방지 조직·인력 등에 대한 심사 기준도 구체화된다. / 정서영 기자 하주식 FIU 제도운영기획관은 “최근 가상자산 시장이 국민과 금융시장에 미치는 영향이 커지면서 가상자산 신고제를 도입했던 2021년과 상황이 달라졌다”며 “가상자산시장 신뢰 유지를 위해서는 사업자 및 대주주의 건전성을 진입 단계부터 철저히 점검할 필요가 있다”고 말했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 08:15:40 GMT</p>
+          </div>
+        </div>
+      </div>
       <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
           <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
@@ -626,49 +626,49 @@ body { font-family: Arial, sans-serif; display: flex; height: 100vh; overflow: h
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:27</span>
               <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
-              <span style="font-size:11px;color:#888;">⭐ 2</span>
+              <span style="font-size:11px;color:#888;">⭐ 0</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE50VTVIWkFreTMyTHMyNTZSUzFKcXEtZWFPenE5bXVqb0Y5ZXV2WDI4OEc1bG01cFJHRlpmNDFma0toQWdUdjlvT1FMdy13cGpfY1pnaVFoVXJUOTlkMEVyUVFqcWV4aDFkdHRfX2JUVm_SAXRBVV95cUxOeWhJTnM0U3BCNzdRaW1oMGFvMjZDa2NUWDhMaHRZYzJUNkY1ZjRNUUtyVEJia0Q3TE9nWWJtallXTVdUM2ExRWFCeUpZcnUteUZmcXI1cHdiUUZfeTZ6STRkMWNzcXVQQXdMU3YxcXB1SkZDRg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">100개국서 쓰이는 코인 결제 카드… 한국만 감감 무소식 - IT조선</a>
+              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5CMXZNSm5MNjBZS05vRmR2OVV0eHBaeE1kMURVaElRZXBITWRlQU11REZTYURrZVVpZHpCSnZMS0NQNmVOc1Zlc3FRU0dXd0YwZmtLTW5WaHQ2Wk9FQ0N4aEdRaTdFTzFpLVhuZHhqSlbSAXRBVV95cUxPeXJlOFJ5c2FEYW90Tm1uTDh1NFVOdE0wNEpEWE1Danl6eG5acjNPQUJwWnlMWnphUUNlQUtjSmRCaVFGdlpTbGZJYS03U0NfVEtXem5SUTNBdDFucE5hYXBFZ1pTUzg5cTRPSDA5eVpDYTNuZg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">코빗 품은 미래에셋, 500억원 추가 투입 - IT조선</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">유럽 여행을 떠난 김지현씨(28)는 환전 대신 이전에 발급받은 크립토카드에 달러 스테이블코인 테더(USDT)를 충전했다. 이처럼 글로벌 시장에서 스테이블코인으로 결제할 수 있는 ‘크립토카드’가 빠르게 확산되고 있다. 해외에서는 크립토카드 사업이 빠르게 확대되고 있지만, 국내 카드사들은 규제 불확실성으로 관련 서비스를 내놓지 못하고 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 21:50:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">/ 디지털엑스 13일 가상자산 업계에 따르면 디지털엑스는 전날 이사회를 열고 제3자 배정 방식의 유상증자를 결의했다. 새로 발행되는 보통주는 1007만8614주로, 주당 발행가는 4961원이다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 06:13:00 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="Digital">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:28</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 0</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hYUszX0lRWVhjOWhXTGN2V0tfUjNVaTdOWURXeHd1Nk1BUDRFczRXakZRd2FzWldiM05HdWVPaW1ZT2txVkFJV1Q5NzZCc0N3bUd2RS13VUs2VTVHcGFSZGFkd2c0Wk5q0gFsQVVfeXFMUE1UQ3F2Tjc0TEJEOXRHTGZuanlVTHVVaVdnQ3lGcjM3S3FOZlR6MkNMeVBidFFmSURtbGxyeDhjRm9RajNndFJMT181V1lmaGRfMmJ5M1BjQ1JaSkdibWkwUFNEMmpEYXRRUVFB?oc=5" target="_blank" style="color:inherit;text-decoration:none;">국민은행, 36억 대출사기…시행사·허위 분양자 공모 - 블로터</a>
+              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5JREpwR2pPN21SU1kwQnZOcmo4XzhMTUk4WXAyazlKRkYxc1c3M1V2VWtOejluMmNVWlZldEp0Z3VTdVo4Z1BqN2hoMUY4M0pKWGoxY0JUZl9rX2pWN1pRbDJIcUtKdWJ1bF8zbXRpaTPSAXRBVV95cUxObkRTb0YwT1VxREVneUJLVm1zVXI3QjNvYWRzR2xXN2gtV0ZFTE9tbTg1ZGk0NXVWZHBtUUt1clNnRzF6elFDOG96VzhFSFhmV3Uxa1N6V3JXTl9GSXdIanF4TC1uUjBCNE9oaGR3OXpzdzVGZg?oc=5" target="_blank" style="color:inherit;text-decoration:none;">거래줄고 시장 위축에… 업비트·빗썸, 코인 상장 경쟁 - IT조선</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">서울 여의도의 KB국민은행 신관 /사진 제공=국민은행 KB국민은행에서 35억7790만원 규모의 금융사고가 발생했다. 부동산 시행사와 허위 분양자 등이 공모해 금융기관을 상대로 대출을 받은 외부인 사기 사건으로 현재 수사기관이 관련자들을 조사하고 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 09:37:28 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">가상자산 시장 침체로 거래대금이 줄어든 가운데, 양대 가상자산 거래소 업비트와 빗썸의 신규 코인 상장 경쟁이 거세지고 있다. 14일 가상자산 업계에 따르면 국내 5대 가상자산 거래소(업비트·빗썸·코인원·코빗·고팍스)는 지난 1월부터 이날까지 총 157개의 가상자산을 신규 상장한 것으로 나타났다. 또다른 가상자산 업계 관계자는 “업비트와 빗썸 모두 대형 거래소인 만큼 신규 상장 종목을 심사하고 관리할 기본적인 역량은 갖추고 있다”면서도 “다만 단기간에 상장 종목이 빠르게 늘어나면 주기적으로 이뤄지는 상장 유지 심사 등 사후관리 업무도 함께 증가할 수밖에 없다”고 했다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 22:00:00 GMT</p>
           </div>
         </div>
       </div>
-      <div class="news-row" data-tag="Digital">
+      <div class="news-row" data-tag="Fintech">
         <div style="display:flex;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:5px;background:#C68642;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ffffff;font-weight:500;flex-shrink:0;">DIG</div>
+          <div style="width:28px;height:28px;border-radius:5px;background:#FFBFA0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6B2200;font-weight:500;flex-shrink:0;">FIN</div>
           <div style="min-width:0;">
             <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;">
               <span style="font-size:13px;font-weight:500;color:#1a1a1a;">뉴스봇</span>
               <span style="font-size:11px;color:#888;">오전 9:29</span>
-              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#F5E6D0;color:#6B3E10;">Digital</span>
+              <span style="font-size:10px;padding:1px 7px;border-radius:3px;font-weight:500;background:#FFECE4;color:#6B2200;">Fintech</span>
               <span style="font-size:11px;color:#888;">⭐ 0</span>
             </div>
             <p style="font-size:13px;font-weight:500;margin:3px 0 2px;color:#1a1a1a;line-height:1.4;">
-              <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnUDE5NVZVVFdjU3ZneUZYLW1DbWhZT0pVa3NKblg4Z1ZvLXIxZ0V4TnVmWmY0T3FVV3RETk1QdnFpZ2x0clJSeTAtOXNlSFoxcUNtQjh3YnRzSUFMdy15Z3hkLTBJeWtK?oc=5" target="_blank" style="color:inherit;text-decoration:none;">하나금융, 인천 지역 시니어·고령 취약계층 대상 ‘하나 행복드림 버스’ 본격 가동 - 테크월드</a>
+              <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBpZ0xsYWdwQXkwTmJXeFdzT1lhNlBkQjNwOURqSXZ1eGpvY1BBTE8yZlZiaWJwVWkxM0xnQW5tSDZSNXlCU0NLWjlyX1JMaE5zUmZXaFRBOEZQRkJGYWFFOHAtRzBLcGtMRDVjV05jdWHSAXRBVV95cUxOanVYZXZfZnpWSHh1YmkxYmg2emtOTmsxSHlEWG9DSTZ0N1RsM0wyVEVHMmtIMkVzOHBwVHc4bjhMd29yOTRjZUZHdG4xZDlQYzVVVVRiXzEyMXBLMWJhX1pfZGV4cGUxZnh0Qk1uYTVVaFU1Uw?oc=5" target="_blank" style="color:inherit;text-decoration:none;">바이낸스 인수 3년… 고팍스, 정상화까지 첩첩산중 [거래소 판도변화⑥] - IT조선</a>
             </p>
-            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">[테크월드=이광재 기자] 하나금융그룹이 인천광역시에 거주 중인 시니어·고령 취약계층 손님의 금융 접근성 향상과 복리 증진을 위해 찾아가는 라이프 토탈케어 솔루션 ‘하나 행복드림(Dream) 버스(이하 행복드림버스)’를 본격 가동한다고 밝혔다. 지난 3월부터 가동 중인 행복드림버스는 하나금융그룹이 포용금융 일환으로 추진 중인 사업으로 이동 및 정보 접근에 어려움을 겪는 시니어·고령 취약계층 손님을 위해 전국 시니어타운, 경로당, 노인복지관, 요양시설 등을 금융 전문가가 직접 전용 미니버스로 찾아가는 현장 밀착형 서비스다. 지난 11일 ‘하나행복드림단’ 소속 직원이 인천광역시 서해구 석남3동경로당을 직접 찾아가 금융강연을 진행하고 있다.</p>
-            <p style="font-size:11px;color:#aaa;margin:0;">Google · Wed, 12 Aug 2026 05:40:00 GMT</p>
+            <p style="font-size:12px;color:#666;margin:0 0 4px;line-height:1.5;">세계 최대 글로벌 가상자산 거래소 바이낸스에 인수된 고팍스가 좀처럼 시장 내 존재감을 키우지 못하고 있다. 바이낸스는 지난 2023년 초 고팍스 운영사 스트리미를 인수, 그로부터 2년여에 걸친 금융당국의 심사 끝에 지난해 말 대주주 변경 승인을 받은 바 있다. 최우선 과제는 가상자산사업자(VASP) 갱신과 고파이 미상환 문제다.</p>
+            <p style="font-size:11px;color:#aaa;margin:0;">Google · Thu, 13 Aug 2026 21:00:00 GMT</p>
           </div>
         </div>
       </div>
