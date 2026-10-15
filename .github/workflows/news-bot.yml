@@ -25,7 +25,7 @@ jobs:
 
       - name: 라이브러리 설치
         run: |
-          pip install feedparser newspaper3k lxml_html_clean googlenewsdecoder langdetect sumy matplotlib transformers beautifulsoup4 nltk
+          pip install "selectolax<1.0" feedparser newspaper3k lxml_html_clean googlenewsdecoder langdetect sumy matplotlib transformers beautifulsoup4 nltk
 
       - name: 뉴스 봇 실행
         run: python news_bot.py
